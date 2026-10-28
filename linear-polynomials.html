@@ -313,50 +313,37 @@ Easy Hinglish learning companion. Follow your teacher and prescribed textbook to
 
 
 <script>
-function setupGyanoraQuizzes() {
-var buttons = document.querySelectorAll(".check-answer");
-  
-  buttons.forEach(function(button) {
-    button.onclick = function() {
-      var quiz = button.closest(".quiz");
+document.querySelectorAll(".quiz").forEach(function(quiz) {
+  var button = quiz.querySelector(".check-answer");
+  var feedback = quiz.querySelector(".feedback");
 
-      if (!quiz) {
-        alert("Quiz section nahi mila.");
-        return;
-      }
+  if (!button || !feedback) return;
 
-      var feedback = quiz.querySelector(".feedback");
-      var selected = quiz.querySelector('input[type="radio"]:checked');
-      
-      if (!feedback) {
-        alert("Feedback section nahi mila.");
-        return;
-      }
+  button.addEventListener("click", function() {
+    var selected = quiz.querySelector('input[type="radio"]:checked');
 
-      if (!selected) {
-        feedback.textContent = "Pehle ek answer select karo.";
-        return;
-      }
+    feedback.style.cssText =
+      "display:block!important;visibility:visible!important;opacity:1!important;padding:12px;margin-top:12px;border-radius:8px;";
 
-      
-if (selected.value === quiz.getAttribute("data-answer")) {
-  feedback.innerHTML = "✅ Bilkul sahi! " + quiz.getAttribute("data-why");
-feedback.style.cssText = "display:block!important; color:green!important; background:#dcfce7; padding:12px; margin-top:12px; border-radius:8px;";
-} else {
-  alert("Answer match nahi hua. Selected: " + selected.value +
-        ", Correct: " + quiz.getAttribute("data-answer"));
-  feedback.innerHTML = "❌ Answer galat hai. Dobara try karo!";
-feedback.style.cssText = "display:block!important; color:#b91c1c!important; background:#fee2e2; padding:12px; margin-top:12px; border-radius:8px;";
-}
-    };
+    if (!selected) {
+      feedback.textContent = "Pehle ek answer select karo.";
+      feedback.style.background = "#fef3c7";
+      feedback.style.color = "#92400e";
+      return;
+    }
+
+    if (selected.value === quiz.getAttribute("data-answer")) {
+      feedback.textContent =
+        "Bilkul sahi! " + quiz.getAttribute("data-why");
+      feedback.style.background = "#dcfce7";
+      feedback.style.color = "#166534";
+    } else {
+      feedback.textContent = "Answer galat hai. Dobara try karo!";
+      feedback.style.background = "#fee2e2";
+      feedback.style.color = "#991b1b";
+    }
   });
-}
-
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", setupGyanoraQuizzes);
-} else {
-  setupGyanoraQuizzes();
-}
+});
 </script>
 
 

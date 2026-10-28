@@ -310,30 +310,39 @@ Easy Hinglish learning companion. Follow your teacher and prescribed textbook to
 </div>
 </footer>
 
+
 <script>
-document.querySelectorAll(".quiz").forEach(function(quiz) {
-  const button = quiz.querySelector(".check-answer");
-  const feedback = quiz.querySelector(".feedback");
+document.addEventListener("click", function(event) {
+  var button = event.target.closest(".check-answer");
 
-  button.addEventListener("click", function() {
-    const selected = quiz.querySelector('input[type="radio"]:checked');
+  if (!button) return;
 
-    if (!selected) {
-      feedback.textContent = "Pehle ek answer select karo.";
-      feedback.dataset.result = "empty";
-      return;
-    }
+  var quiz = button.closest(".quiz");
+  if (!quiz) return;
 
-    if (selected.value === quiz.dataset.answer) {
-      feedback.textContent = "Bilkul sahi! " + quiz.dataset.why;
-      feedback.dataset.result = "correct";
-    } else {
-      feedback.textContent = "Abhi answer galat hai. Dobara try karo!";
-      feedback.dataset.result = "incorrect";
-    }
-  });
+  var feedback = quiz.querySelector(".feedback");
+  var selected = quiz.querySelector('input[type="radio"]:checked');
+
+  if (!feedback) return;
+
+  if (!selected) {
+    feedback.textContent = "Pehle ek answer select karo.";
+    feedback.dataset.result = "empty";
+    return;
+  }
+
+  if (selected.value === quiz.dataset.answer) {
+    feedback.textContent =
+      "Bilkul sahi! " + quiz.dataset.why;
+    feedback.dataset.result = "correct";
+  } else {
+    feedback.textContent =
+      "Answer galat hai. Dobara try karo!";
+    feedback.dataset.result = "incorrect";
+  }
 });
 </script>
+
 
 </body>
 </html>

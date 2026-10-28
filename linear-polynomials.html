@@ -319,6 +319,7 @@ alert("Quiz buttons mile: " + buttons.length);
   
   buttons.forEach(function(button) {
     button.onclick = function() {
+      alert("Button click detect hua!");
       var quiz = button.closest(".quiz");
 
       if (!quiz) {

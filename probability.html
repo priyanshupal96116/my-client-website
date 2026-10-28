@@ -1,1 +1,330 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#2563eb"><title>The Mathematics of Maybe: Introduction to Probability | Gyanora</title><link rel="stylesheet" href="style.css"></head><body><header><div class="container nav"><a class="logo" href="index.html">Gyanora<span>.</span></a><nav class="navlinks"><a href="index.html">Home</a><a href="class9.html">Class 9 Maths</a><a href="class9.html#chapters">Chapters</a></nav></div></header><main><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="class9.html">Class 9 Maths</a> / Chapter 7</div><section class="section"><span class="eyebrow">CLASS 9 MATHS · CHAPTER 7 OF 8</span><h1>The Mathematics of Maybe: Introduction to Probability</h1><p class="lead">Aaj ka goal: concept ko samajhna, example khud solve karna aur practice se check karna.</p></section><section class="lesson"><h2>1. Easy explanation</h2><p>Probability kisi event ke hone ka chance batati hai. Equally likely outcomes mein favourable ÷ total outcomes.</p><div class="tip"><strong>Daily-life example:</strong> Fair coin toss mein Head ke 2 outcomes (Head,Tail) mein se 1 favourable hai.</div></section><section class="lesson"><h2>2. Important formula / idea</h2><div class="formula">P(event)=favourable outcomes/total equally likely outcomes; 0≤P≤1</div><p class="small">Formula yaad karne ke saath yeh samjho ki use kab aur kyun karte hain.</p></section><section class="lesson"><h2>3. Step-by-step solved example</h2><div class="example"><strong>Example:</strong><p>Fair die par even number (2,4,6): 3/6=1/2.</p></div></section><section class="quiz" data-answer="1" data-why="6 equally likely outcomes mein sirf ek 3 hai, isliye 1/6."><span class="eyebrow">4. INTERACTIVE PRACTICE</span><h2>Ab tum try karo!</h2><p>Fair die par 3 aane ki probability?</p><label class="option"><input type="radio" name="answer" value="0"> 1/3</label><label class="option"><input type="radio" name="answer" value="1"> 1/6</label><label class="option"><input type="radio" name="answer" value="2"> 3/6</label><button class="btn check-answer" type="button">Check answer</button><div class="feedback" role="status"></div></section><section class="lesson"><h2>5. Quick revision</h2><p>Probability kisi event ke hone ka chance batati hai. Equally likely outcomes mein favourable ÷ total outcomes.</p><a class="btn secondary" href="class9.html">All chapters</a></section><div class="chapter-nav"><span><a href="mensuration.html">← Previous chapter</a></span><span><a href="sequences.html">Next chapter →</a></span></div></div></main><footer><div class="container"><a class="logo" href="index.html">Gyanora<span>.</span></a><p>Learn better. Grow smarter.</p><p class="small">Easy Hinglish learning companion. Follow your teacher and prescribed textbook too.</p><p class="small">© 2026 Gyanora</p></div></footer><script src="app.js"></script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2563eb">
+  <title>The Mathematics of Maybe: Introduction to Probability | Gyanora</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .diagram {
+      display: block;
+      width: 100%;
+      max-width: 460px;
+      height: auto;
+      margin: 18px auto;
+      border-radius: 14px;
+      background: #f8fafc;
+    }
+    .formula {
+      overflow-wrap: anywhere;
+      font-size: 1.15rem;
+    }
+    .lesson, .example, .tip, .quiz {
+      margin-bottom: 22px;
+    }
+    .answer-box {
+      display: none;
+      padding: 14px;
+      margin-top: 12px;
+      border-radius: 10px;
+      background: #eff6ff;
+    }
+    .practice-btn {
+      margin-top: 10px;
+      padding: 10px 15px;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #2563eb;
+      color: white;
+      font-weight: 600;
+    }
+    .small-note {
+      font-size: .92rem;
+      opacity: .85;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">Gyanora<span>.</span></a>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="class9.html">Class 9 Maths</a>
+      <a href="class9.html#chapters">Chapters</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="container">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> /
+    <a href="class9.html">Class 9 Maths</a> / Probability
+  </div>
+
+  <section class="section">
+    <span class="eyebrow">CLASS 9 MATHS · PROBABILITY</span>
+    <h1>The Mathematics of Maybe: Introduction to Probability</h1>
+    <p class="lead">
+      Aaj hum seekhenge kisi event ke hone ka chance kaise samajhte hain.
+      Coin toss, dice aur daily-life examples se concept clear karenge.
+    </p>
+  </section>
+
+  <section class="lesson">
+    <h2>1. Probability kya hoti hai?</h2>
+    <p>
+      Probability kisi event ke hone ki possibility ya chance ko batati hai.
+      Jaise coin uchhalne par Head aayega ya Tail, ya dice par 6 aayega ya nahi.
+    </p>
+    <p>
+      Probability ki value 0 se 1 ke beech hoti hai:
+    </p>
+    <ul>
+      <li><strong>0:</strong> Event impossible hai.</li>
+      <li><strong>1/2:</strong> Chance aadha hai, jab dono outcomes equally likely hon.</li>
+      <li><strong>1:</strong> Event certain hai.</li>
+    </ul>
+    <div class="tip">
+      <strong>Daily-life example:</strong> Kal baarish hogi ya nahi, iska chance
+      weather forecast batata hai. Maths mein probability ko numbers se express karte hain.
+    </div>
+  </section>
+
+  <section class="lesson">
+    <h2>2. Coin toss ko samjho</h2>
+    <p>
+      Ek fair coin ko ek baar toss karne par do possible outcomes hain:
+      Head (H) aur Tail (T). Dono outcomes equally likely hain.
+    </p>
+
+    <svg class="diagram" viewBox="0 0 360 180" role="img"
+         aria-label="Coin toss ke do outcomes Head aur Tail">
+      <rect x="12" y="12" width="336" height="156" rx="16" fill="#eff6ff"/>
+      <circle cx="105" cy="82" r="45" fill="#fbbf24" stroke="#b45309" stroke-width="4"/>
+      <text x="105" y="90" text-anchor="middle" font-size="22" font-weight="bold" fill="#78350f">H</text>
+      <circle cx="255" cy="82" r="45" fill="#cbd5e1" stroke="#475569" stroke-width="4"/>
+      <text x="255" y="90" text-anchor="middle" font-size="22" font-weight="bold" fill="#1e293b">T</text>
+      <text x="105" y="145" text-anchor="middle" font-size="14" fill="#1e293b">Head</text>
+      <text x="255" y="145" text-anchor="middle" font-size="14" fill="#1e293b">Tail</text>
+    </svg>
+
+    <div class="formula">
+      P(Head) = 1/2
+      <br>
+      P(Tail) = 1/2
+    </div>
+    <p>
+      Total outcomes 2 hain aur Head ke favour mein 1 outcome hai.
+      Isliye Head ki probability 1/2 hai.
+    </p>
+  </section>
+
+  <section class="lesson">
+    <h2>3. Important formula</h2>
+    <div class="formula">
+      Probability =
+      <br>
+      Favourable outcomes ÷ Total equally likely outcomes
+    </div>
+    <p>Yaani:</p>
+    <div class="formula">
+      P(E) = n(E) / n(S)
+    </div>
+    <ul>
+      <li><strong>E:</strong> Woh event jiska chance nikalna hai.</li>
+      <li><strong>n(E):</strong> Event ke favour mein outcomes ki sankhya.</li>
+      <li><strong>S:</strong> Sample space, yaani saare possible outcomes.</li>
+      <li><strong>n(S):</strong> Total possible outcomes ki sankhya.</li>
+    </ul>
+    <p class="small-note">
+      Yeh formula tab use karo jab saare outcomes equally likely hon.
+    </p>
+  </section>
+
+  <section class="lesson">
+    <h2>4. Dice ke saath probability</h2>
+    <p>
+      Ek standard fair dice par 1, 2, 3, 4, 5 aur 6 numbers hote hain.
+      Ek roll mein inmein se koi ek number aata hai.
+    </p>
+
+    <svg class="diagram" viewBox="0 0 360 205" role="img"
+         aria-label="Dice par 1 se 6 tak numbers">
+      <rect x="12" y="12" width="336" height="181" rx="16" fill="#eff6ff"/>
+      <g fill="white" stroke="#334155" stroke-width="2">
+        <rect x="35" y="30" width="82" height="62" rx="9"/>
+        <rect x="139" y="30" width="82" height="62" rx="9"/>
+        <rect x="243" y="30" width="82" height="62" rx="9"/>
+        <rect x="35" y="110" width="82" height="62" rx="9"/>
+        <rect x="139" y="110" width="82" height="62" rx="9"/>
+        <rect x="243" y="110" width="82" height="62" rx="9"/>
+      </g>
+      <g fill="#2563eb" font-size="25" font-weight="bold" text-anchor="middle">
+        <text x="76" y="69">1</text>
+        <text x="180" y="69">2</text>
+        <text x="284" y="69">3</text>
+        <text x="76" y="149">4</text>
+        <text x="180" y="149">5</text>
+        <text x="284" y="149">6</text>
+      </g>
+    </svg>
+
+    <h3>Example A: Even number aane ki probability</h3>
+    <p>Even numbers hain 2, 4, 6. Isliye favourable outcomes = 3.</p>
+    <div class="formula">P(Even) = 3/6 = 1/2</div>
+
+    <h3>Example B: Number 3 aane ki probability</h3>
+    <p>Favourable outcome sirf 3 hai. Total outcomes 6 hain.</p>
+    <div class="formula">P(3) = 1/6</div>
+
+    <h3>Example C: 6 se chhota number aane ki probability</h3>
+    <p>Numbers 1, 2, 3, 4, 5 favourable hain. Total 5 outcomes.</p>
+    <div class="formula">P(Number less than 6) = 5/6</div>
+  </section>
+
+  <section class="lesson">
+    <h2>5. Step-by-step solved example</h2>
+    <div class="example">
+      <strong>Question:</strong>
+      <p>Ek bag mein 3 red balls aur 2 blue balls hain. Bina dekhe ek ball nikali jaati hai. Red ball milne ki probability kya hai?</p>
+
+      <p><strong>Step 1:</strong> Total balls = 3 + 2 = 5.</p>
+      <p><strong>Step 2:</strong> Red balls = 3.</p>
+      <p><strong>Step 3:</strong> Formula apply karo.</p>
+      <div class="formula">P(Red) = 3/5</div>
+      <p><strong>Answer:</strong> Red ball milne ki probability 3/5 hai.</p>
+    </div>
+  </section>
+
+  <section class="lesson">
+    <h2>6. Impossible aur certain events</h2>
+    <div class="example">
+      <p><strong>Impossible event:</strong> Standard dice par 8 aana impossible hai.</p>
+      <div class="formula">P(8) = 0/6 = 0</div>
+      <p><strong>Certain event:</strong> Standard dice par 1 se 6 ke beech number aayega hi.</p>
+      <div class="formula">P(Number from 1 to 6) = 6/6 = 1</div>
+    </div>
+    <div class="tip">
+      Yaad rakho: probability kabhi 0 se kam aur 1 se zyada nahi hoti.
+    </div>
+  </section>
+
+  <section class="lesson">
+    <h2>7. Common mistakes</h2>
+    <ul>
+      <li>Favourable outcomes ko total outcomes se divide karna bhool jaana.</li>
+      <li>Sirf favourable outcomes gin kar total outcomes ignore kar dena.</li>
+      <li>Unequal chances wale outcomes par equally-likely formula bina check kiye use karna.</li>
+      <li>Probability ko 1 se zyada likh dena.</li>
+    </ul>
+  </section>
+
+  <section class="quiz">
+    <span class="eyebrow">8. INTERACTIVE PRACTICE</span>
+    <h2>Ab tum try karo!</h2>
+    <p>Har question ka answer choose karo aur “Check answer” dabao.</p>
+
+    <div class="example">
+      <p><strong>Q1.</strong> Fair coin toss par Tail aane ki probability?</p>
+      <label class="option"><input type="radio" name="q1" value="a"> 1</label>
+      <label class="option"><input type="radio" name="q1" value="b"> 1/2</label>
+      <label class="option"><input type="radio" name="q1" value="c"> 0</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q1','b','a1','Sahi! Do equally likely outcomes H aur T hain, Tail ek outcome hai: 1/2.')">Check answer</button>
+      <div class="answer-box" id="a1" role="status"></div>
+    </div>
+
+    <div class="example">
+      <p><strong>Q2.</strong> Fair dice par 5 aane ki probability?</p>
+      <label class="option"><input type="radio" name="q2" value="a"> 1/6</label>
+      <label class="option"><input type="radio" name="q2" value="b"> 5/6</label>
+      <label class="option"><input type="radio" name="q2" value="c"> 1/2</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q2','a','a2','Sahi! Favourable outcome 1 aur total outcomes 6 hain: 1/6.')">Check answer</button>
+      <div class="answer-box" id="a2" role="status"></div>
+    </div>
+
+    <div class="example">
+      <p><strong>Q3.</strong> Fair dice par odd number aane ki probability?</p>
+      <label class="option"><input type="radio" name="q3" value="a"> 1/6</label>
+      <label class="option"><input type="radio" name="q3" value="b"> 2/6</label>
+      <label class="option"><input type="radio" name="q3" value="c"> 3/6 = 1/2</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q3','c','a3','Sahi! Odd numbers 1, 3, 5 hain. Isliye 3/6 = 1/2.')">Check answer</button>
+      <div class="answer-box" id="a3" role="status"></div>
+    </div>
+
+    <div class="example">
+      <p><strong>Q4.</strong> Standard dice par 9 aane ki probability?</p>
+      <label class="option"><input type="radio" name="q4" value="a"> 1/6</label>
+      <label class="option"><input type="radio" name="q4" value="b"> 0</label>
+      <label class="option"><input type="radio" name="q4" value="c"> 1</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q4','b','a4','Sahi! Standard dice par 9 hota hi nahi, isliye probability 0 hai.')">Check answer</button>
+      <div class="answer-box" id="a4" role="status"></div>
+    </div>
+
+    <div class="example">
+      <p><strong>Q5.</strong> Bag mein 4 green aur 1 yellow ball hai. Green ball ki probability?</p>
+      <label class="option"><input type="radio" name="q5" value="a"> 1/5</label>
+      <label class="option"><input type="radio" name="q5" value="b"> 4/5</label>
+      <label class="option"><input type="radio" name="q5" value="c"> 1/4</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q5','b','a5','Sahi! Total balls 5 aur green balls 4 hain: 4/5.')">Check answer</button>
+      <div class="answer-box" id="a5" role="status"></div>
+    </div>
+  </section>
+
+  <section class="lesson">
+    <h2>9. Quick revision</h2>
+    <ul>
+      <li>Probability event ke hone ka chance batati hai.</li>
+      <li>Equally likely outcomes mein P(E) = favourable / total outcomes.</li>
+      <li>Impossible event ki probability 0 hoti hai.</li>
+      <li>Certain event ki probability 1 hoti hai.</li>
+      <li>Har probability 0 aur 1 ke beech hoti hai, dono included.</li>
+    </ul>
+    <div class="tip">
+      <strong>Study tip:</strong> Pehle sample space likho, phir favourable outcomes gino,
+      aur aakhir mein formula apply karo.
+    </div>
+    <a class="btn secondary" href="class9.html">All chapters</a>
+  </section>
+
+  <div class="chapter-nav">
+    <span><a href="mensuration.html">← Previous chapter</a></span>
+    <span><a href="sequences.html">Next chapter →</a></span>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="container">
+    <a class="logo" href="index.html">Gyanora<span>.</span></a>
+    <p>Learn better. Grow smarter.</p>
+    <p class="small">Easy Hinglish learning companion. Follow your teacher and prescribed textbook too.</p>
+    <p class="small">© 2026 Gyanora</p>
+  </div>
+</footer>
+
+<script>
+function checkQuestion(name, correct, resultId, explanation) {
+  const selected = document.querySelector('input[name="' + name + '"]:checked');
+  const result = document.getElementById(resultId);
+  result.style.display = 'block';
+
+  if (!selected) {
+    result.textContent = 'Pehle ek answer choose karo.';
+    return;
+  }
+
+  if (selected.value === correct) {
+    result.textContent = explanation;
+  } else {
+    result.textContent = 'Abhi answer sahi nahi hai. Formula dobara lagao aur phir try karo.';
+  }
+}
+</script>
+<script src="app.js"></script>
+</body>
+</html>

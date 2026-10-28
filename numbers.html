@@ -1,1 +1,328 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#2563eb"><title>The World of Numbers | Gyanora</title><link rel="stylesheet" href="style.css"></head><body><header><div class="container nav"><a class="logo" href="index.html">Gyanora<span>.</span></a><nav class="navlinks"><a href="index.html">Home</a><a href="class9.html">Class 9 Maths</a><a href="class9.html#chapters">Chapters</a></nav></div></header><main><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="class9.html">Class 9 Maths</a> / Chapter 3</div><section class="section"><span class="eyebrow">CLASS 9 MATHS · CHAPTER 3 OF 8</span><h1>The World of Numbers</h1><p class="lead">Aaj ka goal: concept ko samajhna, example khud solve karna aur practice se check karna.</p></section><section class="lesson"><h2>1. Easy explanation</h2><p>Natural numbers 1,2,3…; whole numbers mein 0 bhi; integers mein negative numbers bhi. Rational numbers p/q form mein hote hain, q≠0.</p><div class="tip"><strong>Daily-life example:</strong> Temperature +3°C se −2°C ho to number line par zero ke neeche jaate hain.</div></section><section class="lesson"><h2>2. Important formula / idea</h2><div class="formula">Rational number = p/q, q≠0</div><p class="small">Formula yaad karne ke saath yeh samjho ki use kab aur kyun karte hain.</p></section><section class="lesson"><h2>3. Step-by-step solved example</h2><div class="example"><strong>Example:</strong><p>√49=7, kyunki 7×7=49. 3/4 rational hai.</p></div></section><section class="quiz" data-answer="2" data-why="√2 ko do integers ke ratio mein exactly nahi likh sakte."><span class="eyebrow">4. INTERACTIVE PRACTICE</span><h2>Ab tum try karo!</h2><p>Kaunsa number irrational hai?</p><label class="option"><input type="radio" name="answer" value="0"> 0.5</label><label class="option"><input type="radio" name="answer" value="1"> 7/9</label><label class="option"><input type="radio" name="answer" value="2"> √2</label><button class="btn check-answer" type="button">Check answer</button><div class="feedback" role="status"></div></section><section class="lesson"><h2>5. Quick revision</h2><p>Natural numbers 1,2,3…; whole numbers mein 0 bhi; integers mein negative numbers bhi. Rational numbers p/q form mein hote hain, q≠0.</p><a class="btn secondary" href="class9.html">All chapters</a></section><div class="chapter-nav"><span><a href="linear-polynomials.html">← Previous chapter</a></span><span><a href="algebraic-identities.html">Next chapter →</a></span></div></div></main><footer><div class="container"><a class="logo" href="index.html">Gyanora<span>.</span></a><p>Learn better. Grow smarter.</p><p class="small">Easy Hinglish learning companion. Follow your teacher and prescribed textbook too.</p><p class="small">© 2026 Gyanora</p></div></footer><script src="app.js"></script></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2563eb">
+<title>The World of Numbers | Gyanora</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.lesson{margin:22px 0;padding:22px;border:1px solid #dbeafe;border-radius:18px;background:#fff}
+.lesson h2{color:#1d4ed8}
+.diagram{margin:18px 0;padding:12px;background:#f8fafc;border-radius:12px;overflow-x:auto}
+.diagram svg{display:block;width:100%;min-width:290px;height:auto}
+.diagram text{font-family:Arial,sans-serif}
+.concept{margin-top:22px;padding-top:12px;border-top:1px solid #dbeafe}
+.steps li{margin:10px 0;line-height:1.65}
+.example{padding:14px;background:#eff6ff;border-radius:12px;margin:12px 0}
+.note{padding:14px;background:#fef3c7;border-radius:12px;margin:14px 0}
+.quiz-question{padding:12px 0;border-bottom:1px solid #dbeafe}
+.quiz-question label{display:block;padding:9px;margin:6px 0;background:#f8fafc;border-radius:8px}
+.answer{display:none;padding:10px;background:#dcfce7;border-radius:8px;margin-top:8px}
+.show-answer{margin-top:8px;cursor:pointer}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="logo" href="index.html">Gyanora<span>.</span></a>
+<nav class="navlinks">
+<a href="index.html">Home</a>
+<a href="class9.html">Class 9 Maths</a>
+<a href="class9.html#chapters">Chapters</a>
+</nav>
+</div>
+</header>
+
+<main>
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> /
+<a href="class9.html">Class 9 Maths</a> / The World of Numbers
+</div>
+
+<section class="section">
+<span class="eyebrow">CLASS 9 MATHS · NUMBER SYSTEM</span>
+<h1>The World of Numbers</h1>
+<p class="lead">Numbers ko ratna nahi, samajhna hai! Is chapter mein number line, rational aur irrational numbers, square roots aur decimal expansions ko examples aur diagrams se seekhenge.</p>
+</section>
+
+<section class="lesson">
+<h2>1. Numbers ki duniya</h2>
+<p>Socho tumhare paas ₹20 hain. Tum ₹7 kharch karte ho, toh ₹13 bachte hain. Yahan counting, subtraction aur numbers ka use hota hai.</p>
+<p>Maths mein alag situations ke liye alag types ke numbers use hote hain.</p>
+
+<div class="diagram">
+<svg viewBox="0 0 620 210" role="img" aria-label="Number system categories">
+<rect x="155" y="8" width="310" height="42" rx="10" fill="#dbeafe" stroke="#2563eb"/>
+<text x="310" y="34" font-size="17" text-anchor="middle" fill="#1e3a8a">Real Numbers</text>
+<path d="M310 50 V70 M155 70 H465 M155 70 V85 M465 70 V85" stroke="#64748b" stroke-width="2" fill="none"/>
+<rect x="25" y="85" width="260" height="42" rx="9" fill="#dcfce7" stroke="#16a34a"/>
+<rect x="335" y="85" width="260" height="42" rx="9" fill="#fef3c7" stroke="#d97706"/>
+<text x="155" y="111" font-size="16" text-anchor="middle" fill="#166534">Rational numbers</text>
+<text x="465" y="111" font-size="16" text-anchor="middle" fill="#92400e">Irrational numbers</text>
+<text x="155" y="151" font-size="13" text-anchor="middle" fill="#334155">3/4, −2, 0.5</text>
+<text x="465" y="151" font-size="13" text-anchor="middle" fill="#334155">√2, √3, π</text>
+<text x="310" y="191" font-size="14" text-anchor="middle" fill="#475569">Real numbers = rational + irrational numbers</text>
+</svg>
+</div>
+
+<div class="concept">
+<h3>1.1 Natural numbers</h3>
+<p>Counting ke numbers: <strong>1, 2, 3, 4, 5, ...</strong></p>
+<p>Example: 5 students, 12 pencils, 3 books.</p>
+</div>
+<div class="concept">
+<h3>1.2 Whole numbers</h3>
+<p>Natural numbers ke saath zero bhi: <strong>0, 1, 2, 3, 4, ...</strong></p>
+<p>Example: Box mein koi pencil nahi hai, toh pencils ki sankhya 0 hai.</p>
+</div>
+<div class="concept">
+<h3>1.3 Integers</h3>
+<p>Positive numbers, zero aur negative numbers milkar integers bante hain.</p>
+<p>Examples: <strong>−3, −2, −1, 0, 1, 2, 3</strong></p>
+<p>Daily life: Temperature 4°C se girkar −2°C ho sakta hai.</p>
+</div>
+</section>
+
+<section class="lesson">
+<h2>2. Number line ko samjho</h2>
+<p>Number line ek seedhi line hoti hai jis par numbers ko unki position ke hisaab se dikhate hain.</p>
+<ul>
+<li>Right side jaane par numbers bade hote hain.</li>
+<li>Left side jaane par numbers chhote hote hain.</li>
+<li>Zero na positive hai na negative.</li>
+</ul>
+
+<div class="diagram">
+<svg viewBox="0 0 620 130" role="img" aria-label="Number line from negative three to positive three">
+<line x1="40" y1="55" x2="585" y2="55" stroke="#334155" stroke-width="3"/>
+<path d="M585 55 l-12 -7 v14 z" fill="#334155"/>
+<g font-size="16" text-anchor="middle" fill="#0f172a">
+<line x1="70" y1="44" x2="70" y2="66" stroke="#334155" stroke-width="2"/><text x="70" y="88">−3</text>
+<line x1="150" y1="44" x2="150" y2="66" stroke="#334155" stroke-width="2"/><text x="150" y="88">−2</text>
+<line x1="230" y1="44" x2="230" y2="66" stroke="#334155" stroke-width="2"/><text x="230" y="88">−1</text>
+<line x1="310" y1="44" x2="310" y2="66" stroke="#334155" stroke-width="2"/><text x="310" y="88">0</text>
+<line x1="390" y1="44" x2="390" y2="66" stroke="#334155" stroke-width="2"/><text x="390" y="88">1</text>
+<line x1="470" y1="44" x2="470" y2="66" stroke="#334155" stroke-width="2"/><text x="470" y="88">2</text>
+<line x1="550" y1="44" x2="550" y2="66" stroke="#334155" stroke-width="2"/><text x="550" y="88">3</text>
+</g>
+<text x="310" y="116" text-anchor="middle" font-size="14" fill="#475569">Zero ke right: positive · Zero ke left: negative</text>
+</svg>
+</div>
+
+<h3>Solved example</h3>
+<p>Temperature −2°C hai. Temperature 5°C badh gaya. Naya temperature?</p>
+<ol class="steps">
+<li>Starting temperature = −2°C</li>
+<li>Increase = +5°C</li>
+<li>Calculate: −2 + 5 = 3</li>
+</ol>
+<p><strong>Answer: 3°C</strong></p>
+</section>
+
+<section class="lesson">
+<h2>3. Rational numbers</h2>
+<p>Aisa number jise <strong>p/q</strong> ke form mein likh sakein, jahan p aur q integers hon aur q ≠ 0, rational number kehlata hai.</p>
+<div class="formula">Rational number = p/q, where q ≠ 0</div>
+<p>Examples: 1/2, −3/4, 5, 0.25.</p>
+<p>Whole number 5 bhi rational hai, kyunki 5 = 5/1.</p>
+
+<div class="diagram">
+<svg viewBox="0 0 620 125" role="img" aria-label="Three out of four equal parts shaded to show three quarters">
+<g transform="translate(170 15)">
+<rect x="0" y="0" width="65" height="55" rx="5" fill="#2563eb"/>
+<rect x="72" y="0" width="65" height="55" rx="5" fill="#2563eb"/>
+<rect x="144" y="0" width="65" height="55" rx="5" fill="#2563eb"/>
+<rect x="216" y="0" width="65" height="55" rx="5" fill="#e2e8f0" stroke="#64748b"/>
+</g>
+<text x="310" y="95" font-size="20" text-anchor="middle" fill="#1e3a8a">3/4 = 3 shaded parts out of 4 equal parts</text>
+</svg>
+</div>
+
+<h3>Decimal expansion</h3>
+<ul>
+<li><strong>Terminating decimal:</strong> decimal digits khatam ho jaate hain. Example: 1/4 = 0.25.</li>
+<li><strong>Non-terminating recurring:</strong> digits chalte rehte hain lekin pattern repeat hota hai. Example: 1/3 = 0.333...</li>
+</ul>
+
+<div class="example">
+<strong>Example: 3/8 ko decimal mein badlo.</strong>
+<ol class="steps">
+<li>3 ÷ 8 karo.</li>
+<li>Result 0.375 aata hai.</li>
+<li>Decimal khatam ho gaya, isliye yeh terminating decimal hai.</li>
+</ol>
+</div>
+</section>
+
+<section class="lesson">
+<h2>4. Irrational numbers</h2>
+<p>Aise real numbers jinhe do integers ke ratio p/q ke roop mein exactly nahi likh sakte, irrational numbers kehlate hain.</p>
+<p>Examples: <strong>√2, √3, π</strong>.</p>
+<p>Inki decimal expansion non-terminating aur non-recurring hoti hai — yani decimal na khatam hota hai aur na hi digits ka koi fixed pattern baar-baar repeat hota hai.</p>
+
+<div class="diagram">
+<svg viewBox="0 0 620 150" role="img" aria-label="Decimal comparison between rational and irrational numbers">
+<rect x="20" y="12" width="580" height="52" rx="10" fill="#dcfce7" stroke="#16a34a"/>
+<text x="310" y="34" text-anchor="middle" font-size="17" fill="#166534">Rational: 0.25</text>
+<text x="310" y="53" text-anchor="middle" font-size="13" fill="#166534">Decimal ends</text>
+<rect x="20" y="78" width="580" height="58" rx="10" fill="#fef3c7" stroke="#d97706"/>
+<text x="310" y="101" text-anchor="middle" font-size="17" fill="#92400e">Irrational: √2 = 1.41421356...</text>
+<text x="310" y="122" text-anchor="middle" font-size="13" fill="#92400e">No ending and no repeating fixed pattern</text>
+</svg>
+</div>
+
+<div class="note"><strong>Important:</strong> Har non-terminating decimal irrational nahi hota. 0.333... repeat hota hai, isliye rational hai.</div>
+</section>
+
+<section class="lesson">
+<h2>5. Square roots aur perfect squares</h2>
+<p>Square root ka matlab: kaunsa number khud se multiply karne par diya hua number deta hai?</p>
+<div class="formula">√a = b means b × b = a (for non-negative a and b)</div>
+
+<div class="diagram">
+<svg viewBox="0 0 620 180" role="img" aria-label="Square with side four units and area sixteen square units">
+<rect x="220" y="15" width="140" height="120" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+<path d="M220 45 H360 M220 75 H360 M220 105 H360 M255 15 V135 M290 15 V135 M325 15 V135" stroke="#93c5fd" stroke-width="1"/>
+<text x="290" y="76" text-anchor="middle" font-size="21" fill="#1e3a8a">Area = 16</text>
+<text x="290" y="160" text-anchor="middle" font-size="17" fill="#0f172a">Side = 4 units, so √16 = 4</text>
+</svg>
+</div>
+
+<table>
+<thead><tr><th>Number</th><th>Square</th><th>Square root</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>1 × 1 = 1</td><td>√1 = 1</td></tr>
+<tr><td>4</td><td>2 × 2 = 4</td><td>√4 = 2</td></tr>
+<tr><td>9</td><td>3 × 3 = 9</td><td>√9 = 3</td></tr>
+<tr><td>25</td><td>5 × 5 = 25</td><td>√25 = 5</td></tr>
+<tr><td>49</td><td>7 × 7 = 49</td><td>√49 = 7</td></tr>
+<tr><td>81</td><td>9 × 9 = 81</td><td>√81 = 9</td></tr>
+</tbody>
+</table>
+
+<h3>Solved example: √144</h3>
+<ol class="steps">
+<li>Socho kaunsa number khud se multiply hokar 144 deta hai.</li>
+<li>12 × 12 = 144.</li>
+<li>Isliye √144 = <strong>12</strong>.</li>
+</ol>
+
+<h3>√2 irrational kyun hai?</h3>
+<p>√2 ki value lagbhag 1.414213... hai. Iska decimal na khatam hota hai aur na hi koi fixed repeating pattern follow karta hai. Isliye √2 irrational hai.</p>
+</section>
+
+<section class="lesson">
+<h2>6. Real numbers aur unki position</h2>
+<p>Rational aur irrational numbers dono real numbers hain. Number line par har real number ki ek position hoti hai.</p>
+<div class="diagram">
+<svg viewBox="0 0 620 135" role="img" aria-label="Approximate positions of square roots on number line">
+<line x1="45" y1="55" x2="580" y2="55" stroke="#334155" stroke-width="3"/>
+<path d="M580 55 l-12 -7 v14z" fill="#334155"/>
+<g font-size="15" text-anchor="middle" fill="#0f172a">
+<line x1="70" y1="45" x2="70" y2="65" stroke="#334155" stroke-width="2"/><text x="70" y="84">0</text>
+<line x1="200" y1="45" x2="200" y2="65" stroke="#334155" stroke-width="2"/><text x="200" y="84">1</text>
+<line x1="330" y1="45" x2="330" y2="65" stroke="#334155" stroke-width="2"/><text x="330" y="84">2</text>
+<line x1="460" y1="45" x2="460" y2="65" stroke="#334155" stroke-width="2"/><text x="460" y="84">3</text>
+</g>
+<circle cx="254" cy="55" r="6" fill="#dc2626"/>
+<text x="254" y="30" text-anchor="middle" font-size="15" fill="#b91c1c">√2 ≈ 1.414</text>
+<circle cx="295" cy="55" r="6" fill="#16a34a"/>
+<text x="295" y="110" text-anchor="middle" font-size="15" fill="#166534">√3 ≈ 1.732</text>
+</svg>
+</div>
+<p>Diagram approximate hai. √2, 1 aur 2 ke beech aata hai; √3 bhi 1 aur 2 ke beech hai, lekin √2 se bada hai.</p>
+</section>
+
+<section class="lesson">
+<h2>7. Common mistakes</h2>
+<ul>
+<li>√49 = ±7 nahi, principal square root √49 = 7 hota hai. Equation x² = 49 ke solutions +7 aur −7 hain.</li>
+<li>0 rational number hai, kyunki 0 = 0/1.</li>
+<li>Har decimal irrational nahi hota. Terminating aur recurring decimals rational hote hain.</li>
+<li>Fraction p/q mein denominator q zero nahi ho sakta.</li>
+</ul>
+</section>
+
+<section class="lesson">
+<h2>8. Practice questions</h2>
+<p>Pehle khud solve karo, phir answer reveal karna.</p>
+
+<div class="quiz-question">
+<strong>Q1. Inmein se irrational number kaunsa hai?</strong>
+<label><input type="radio" name="q1" value="a"> 0.75</label>
+<label><input type="radio" name="q1" value="b"> 5/8</label>
+<label><input type="radio" name="q1" value="c"> √3</label>
+<button class="btn show-answer" type="button" onclick="reveal('a1')">Answer check karo</button>
+<div class="answer" id="a1">Correct: √3. Iska decimal non-terminating aur non-recurring hai.</div>
+</div>
+
+<div class="quiz-question">
+<strong>Q2. √81 ki value kya hai?</strong>
+<label><input type="radio" name="q2" value="a"> 8</label>
+<label><input type="radio" name="q2" value="b"> 9</label>
+<label><input type="radio" name="q2" value="c"> 18</label>
+<button class="btn show-answer" type="button" onclick="reveal('a2')">Answer check karo</button>
+<div class="answer" id="a2">Correct: 9, kyunki 9 × 9 = 81.</div>
+</div>
+
+<div class="quiz-question">
+<strong>Q3. Kaunsa number rational hai?</strong>
+<label><input type="radio" name="q3" value="a"> √2</label>
+<label><input type="radio" name="q3" value="b"> π</label>
+<label><input type="radio" name="q3" value="c"> 0.333...</label>
+<button class="btn show-answer" type="button" onclick="reveal('a3')">Answer check karo</button>
+<div class="answer" id="a3">Correct: 0.333... kyunki yeh repeating decimal hai aur 1/3 ke barabar hai.</div>
+</div>
+
+<div class="quiz-question">
+<strong>Q4. −4 aur 2 mein number line par kaunsa left side par hoga?</strong>
+<label><input type="radio" name="q4" value="a"> −4</label>
+<label><input type="radio" name="q4" value="b"> 2</label>
+<button class="btn show-answer" type="button" onclick="reveal('a4')">Answer check karo</button>
+<div class="answer" id="a4">Correct: −4. Number line par chhota number left side hota hai.</div>
+</div>
+</section>
+
+<section class="lesson">
+<h2>9. Chapter revision</h2>
+<ul>
+<li>Natural: 1, 2, 3, ...</li>
+<li>Whole: 0, 1, 2, 3, ...</li>
+<li>Integers: ..., −2, −1, 0, 1, 2, ...</li>
+<li>Rational: p/q, where q ≠ 0.</li>
+<li>Irrational: decimal non-terminating and non-recurring.</li>
+<li>Real numbers: rational and irrational numbers together.</li>
+<li>Perfect square: integer ka square, jaise 1, 4, 9, 16, 25, ...</li>
+</ul>
+<div class="note"><strong>Study tip:</strong> Har example ko copy mein khud solve karo. Agar answer galat ho, toh steps ko dobara check karo.</div>
+<a class="btn secondary" href="class9.html">All chapters</a>
+</section>
+
+<div class="chapter-nav">
+<span><a href="linear-polynomials.html">← Previous chapter</a></span>
+<span><a href="algebraic-identities.html">Next chapter →</a></span>
+</div>
+</div>
+</main>
+
+<footer>
+<div class="container">
+<a class="logo" href="index.html">Gyanora<span>.</span></a>
+<p>Learn better. Grow smarter.</p>
+<p class="small">Easy Hinglish learning companion. Follow your prescribed textbook and teacher too.</p>
+<p class="small">© 2026 Gyanora</p>
+</div>
+</footer>
+
+<script src="app.js"></script>
+<script>
+function reveal(id){
+const box=document.getElementById(id);
+if(box){box.style.display=box.style.display==="block"?"none":"block";}
+}
+</script>
+</body>
+</html>

@@ -1,1 +1,360 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#2563eb"><title>Orienting Yourself: The Use of Coordinates | Gyanora</title><link rel="stylesheet" href="style.css"></head><body><header><div class="container nav"><a class="logo" href="index.html">Gyanora<span>.</span></a><nav class="navlinks"><a href="index.html">Home</a><a href="class9.html">Class 9 Maths</a><a href="class9.html#chapters">Chapters</a></nav></div></header><main><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="class9.html">Class 9 Maths</a> / Chapter 1</div><section class="section"><span class="eyebrow">CLASS 9 MATHS · CHAPTER 1 OF 8</span><h1>Orienting Yourself: The Use of Coordinates</h1><p class="lead">Aaj ka goal: concept ko samajhna, example khud solve karna aur practice se check karna.</p></section><section class="lesson"><h2>1. Easy explanation</h2><p>Coordinates tell us the exact position of a point on a grid.</p><div class="tip"><strong>Daily-life example:</strong> School map: library at (2,3) means 2 units right and 3 units up.</div></section><section class="lesson"><h2>2. Important formula / idea</h2><div class="formula">Distance = √[(x₂−x₁)²+(y₂−y₁)²]</div><p class="small">Formula yaad karne ke saath yeh samjho ki use kab aur kyun karte hain.</p></section><section class="lesson"><h2>3. Step-by-step solved example</h2><div class="example"><strong>Example:</strong><p>Point A(1,2), B(4,6): distance = √[(4−1)²+(6−2)²] = √25 = 5.</p></div></section><section class="quiz" data-answer="1" data-why="Ordered pair (x,y) mein pehla number x-coordinate hota hai."><span class="eyebrow">4. INTERACTIVE PRACTICE</span><h2>Ab tum try karo!</h2><p>Point P(−2,3) ka x-coordinate kya hai?</p><label class="option"><input type="radio" name="answer" value="0"> 3</label><label class="option"><input type="radio" name="answer" value="1"> −2</label><label class="option"><input type="radio" name="answer" value="2"> 1</label><button class="btn check-answer" type="button">Check answer</button><div class="feedback" role="status"></div></section><section class="lesson"><h2>5. Quick revision</h2><p>Coordinates tell us the exact position of a point on a grid.</p><a class="btn secondary" href="class9.html">All chapters</a></section><div class="chapter-nav"><span><a href="class9.html">← Chapter list</a></span><span><a href="linear-polynomials.html">Next chapter →</a></span></div></div></main><footer><div class="container"><a class="logo" href="index.html">Gyanora<span>.</span></a><p>Learn better. Grow smarter.</p><p class="small">Easy Hinglish learning companion. Follow your teacher and prescribed textbook too.</p><p class="small">© 2026 Gyanora</p></div></footer><script src="app.js"></script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2563eb">
+  <title>Orienting Yourself: The Use of Coordinates | Gyanora</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .diagram {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin: 18px auto;
+      background: #f8fafc;
+      border-radius: 14px;
+    }
+    .answer-box {
+      display: none;
+      padding: 14px;
+      margin-top: 12px;
+      border-radius: 10px;
+      background: #eff6ff;
+    }
+    .practice-btn {
+      margin-top: 10px;
+      padding: 10px 15px;
+      border: 0;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .formula { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">Gyanora<span>.</span></a>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="class9.html">Class 9 Maths</a>
+      <a href="class9.html#chapters">Chapters</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="container">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> /
+    <a href="class9.html">Class 9 Maths</a> / Coordinate Geometry
+  </div>
+
+  <section class="section">
+    <span class="eyebrow">CLASS 9 MATHS · COORDINATE GEOMETRY</span>
+    <h1>Orienting Yourself: The Use of Coordinates</h1>
+    <p class="lead">
+      Aaj hum seekhenge graph par kisi point ki exact location kaise batate hain.
+      X-axis, Y-axis, origin, quadrants aur ordered pairs ko easy Hinglish mein samjhenge.
+    </p>
+  </section>
+
+  <section class="lesson">
+    <h2>1. Coordinate Geometry kya hai?</h2>
+    <p>
+      Coordinate Geometry maths ki woh branch hai jisme hum numbers ki madad
+      se kisi point ki location graph par batate hain.
+    </p>
+    <div class="tip">
+      <strong>Daily-life example:</strong> Socho school ka map ek grid hai.
+      Agar library point (2, 3) par hai, to origin se 2 units right aur 3 units up
+      jaakar library ki location mil sakti hai.
+    </div>
+  </section>
+
+  <section class="lesson">
+    <h2>2. Cartesian plane aur axes</h2>
+    <p>
+      Cartesian plane mein do number lines ek doosre ko 90° par cut karti hain.
+    </p>
+    <ul>
+      <li><strong>X-axis:</strong> Horizontal line, left-right direction.</li>
+      <li><strong>Y-axis:</strong> Vertical line, up-down direction.</li>
+      <li><strong>Origin:</strong> Dono axes ka intersection point, (0, 0).</li>
+    </ul>
+
+    <svg class="diagram" viewBox="0 0 360 330" role="img"
+         aria-label="Cartesian plane with X-axis, Y-axis and origin">
+      <rect x="12" y="12" width="336" height="306" rx="14" fill="#eff6ff"/>
+      <g stroke="#cbd5e1" stroke-width="1">
+        <path d="M60 40V290 M90 40V290 M120 40V290 M150 40V290 M180 40V290 M210 40V290 M240 40V290 M270 40V290 M300 40V290"/>
+        <path d="M40 50H320 M40 80H320 M40 110H320 M40 140H320 M40 170H320 M40 200H320 M40 230H320 M40 260H320 M40 290H320"/>
+      </g>
+      <g stroke="#334155" stroke-width="2.5" fill="none">
+        <path d="M35 170H325 M180 300V30"/>
+        <path d="M315 164L325 170L315 176 M174 40L180 30L186 40"/>
+      </g>
+      <circle cx="180" cy="170" r="5" fill="#dc2626"/>
+      <g fill="#1e293b" font-size="13">
+        <text x="310" y="158">X</text>
+        <text x="190" y="42">Y</text>
+        <text x="188" y="188">O (0,0)</text>
+        <text x="45" y="158">Negative</text>
+        <text x="250" y="158">Positive</text>
+      </g>
+    </svg>
+    <p>
+      X-axis par har point ka y-coordinate 0 hota hai, jaise (3, 0).
+      Y-axis par har point ka x-coordinate 0 hota hai, jaise (0, 4).
+    </p>
+  </section>
+
+  <section class="lesson">
+    <h2>3. Ordered pair (x, y)</h2>
+    <p>
+      Kisi point ko hum ordered pair (x, y) se likhte hain. Pehla number x-coordinate
+      aur doosra number y-coordinate hota hai.
+    </p>
+    <div class="formula">(x, y) = (horizontal position, vertical position)</div>
+    <div class="example">
+      <p><strong>Example:</strong> Point P(−2, 3).</p>
+      <ul>
+        <li>x-coordinate = −2, yaani origin se 2 units left.</li>
+        <li>y-coordinate = 3, yaani origin se 3 units up.</li>
+      </ul>
+    </div>
+    <div class="tip">
+      <strong>Yaad rakho:</strong> Pehle x direction mein move karo, phir y direction mein.
+      Order badalne se point badal sakta hai: (2, 3) aur (3, 2) alag points hain.
+    </div>
+  </section>
+
+  <section class="lesson">
+    <h2>4. Graph par point plot karna</h2>
+    <p>Point A(3, 2) plot karne ke steps:</p>
+    <ol>
+      <li>Origin (0, 0) se start karo.</li>
+      <li>X-axis par 3 units right jao.</li>
+      <li>Wahan se 2 units up jao.</li>
+      <li>Point mark karke A likho.</li>
+    </ol>
+
+    <svg class="diagram" viewBox="0 0 360 300" role="img"
+         aria-label="Graph showing point A at coordinates 3,2">
+      <rect x="10" y="10" width="340" height="280" rx="14" fill="#eff6ff"/>
+      <g stroke="#cbd5e1" stroke-width="1">
+        <path d="M40 50V250 M70 50V250 M100 50V250 M130 50V250 M160 50V250 M190 50V250 M220 50V250 M250 50V250 M280 50V250 M310 50V250"/>
+        <path d="M40 50H310 M40 80H310 M40 110H310 M40 140H310 M40 170H310 M40 200H310 M40 230H310 M40 250H310"/>
+      </g>
+      <g stroke="#334155" stroke-width="2" fill="none">
+        <path d="M40 230H325 M70 265V35"/>
+        <path d="M315 224L325 230L315 236 M64 45L70 35L76 45"/>
+      </g>
+      <path d="M160 230V170H70" stroke="#16a34a" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <circle cx="160" cy="170" r="6" fill="#dc2626"/>
+      <g fill="#1e293b" font-size="13">
+        <text x="329" y="222">X</text>
+        <text x="80" y="40">Y</text>
+        <text x="48" y="247">O</text>
+        <text x="154" y="248">3</text>
+        <text x="48" y="174">2</text>
+        <text x="171" y="163" font-weight="bold">A (3,2)</text>
+      </g>
+    </svg>
+  </section>
+
+  <section class="lesson">
+    <h2>5. Four quadrants</h2>
+    <p>
+      X-axis aur Y-axis plane ko chaar regions mein divide karte hain.
+      In regions ko quadrants kehte hain.
+    </p>
+    <svg class="diagram" viewBox="0 0 360 300" role="img"
+         aria-label="Four quadrants with coordinate signs">
+      <rect x="12" y="12" width="336" height="276" rx="14" fill="#eff6ff"/>
+      <rect x="180" y="45" width="125" height="95" fill="#bbf7d0"/>
+      <rect x="55" y="45" width="125" height="95" fill="#bfdbfe"/>
+      <rect x="55" y="140" width="125" height="95" fill="#fde68a"/>
+      <rect x="180" y="140" width="125" height="95" fill="#fecaca"/>
+      <g stroke="#334155" stroke-width="2.5">
+        <path d="M35 140H325 M180 260V25"/>
+      </g>
+      <g fill="#1e293b" font-size="15" font-weight="bold" text-anchor="middle">
+        <text x="240" y="80">Quadrant I</text>
+        <text x="240" y="105">(+,+)</text>
+        <text x="117" y="80">Quadrant II</text>
+        <text x="117" y="105">(−,+)</text>
+        <text x="117" y="180">Quadrant III</text>
+        <text x="117" y="205">(−,−)</text>
+        <text x="240" y="180">Quadrant IV</text>
+        <text x="240" y="205">(+ ,−)</text>
+      </g>
+      <text x="188" y="155" font-size="12" fill="#334155">O</text>
+    </svg>
+    <ul>
+      <li><strong>Quadrant I:</strong> x positive, y positive.</li>
+      <li><strong>Quadrant II:</strong> x negative, y positive.</li>
+      <li><strong>Quadrant III:</strong> x negative, y negative.</li>
+      <li><strong>Quadrant IV:</strong> x positive, y negative.</li>
+    </ul>
+    <p class="small">
+      Axes par maujood points kisi quadrant ke andar nahi hote.
+    </p>
+  </section>
+
+  <section class="lesson">
+    <h2>6. Solved examples</h2>
+    <div class="example">
+      <strong>Example A:</strong>
+      <p>Point B(4, 0) kis axis par hai?</p>
+      <p>Y-coordinate 0 hai, isliye point X-axis par hai.</p>
+    </div>
+    <div class="example">
+      <strong>Example B:</strong>
+      <p>Point C(0, −5) kis axis par hai?</p>
+      <p>X-coordinate 0 hai, isliye point Y-axis par hai.</p>
+    </div>
+    <div class="example">
+      <strong>Example C:</strong>
+      <p>Point D(−3, 2) kis quadrant mein hai?</p>
+      <p>x negative aur y positive hai, isliye Quadrant II.</p>
+    </div>
+  </section>
+
+  <section class="lesson">
+    <h2>7. Extra concept: Distance between two points</h2>
+    <p>
+      Do points ke beech seedhi line ki distance find karne ke liye distance
+      formula use hota hai. Yeh ek additional concept hai; pehle coordinates aur
+      graph plotting par pakad banao.
+    </p>
+    <div class="formula">
+      AB = √[(x₂ − x₁)² + (y₂ − y₁)²]
+    </div>
+    <div class="example">
+      <strong>Example:</strong> A(1, 2), B(4, 6).
+      <p>AB = √[(4 − 1)² + (6 − 2)²]</p>
+      <p>= √[9 + 16] = √25 = 5 units.</p>
+    </div>
+  </section>
+
+  <section class="lesson">
+    <h2>8. Common mistakes</h2>
+    <ul>
+      <li>(x, y) mein x aur y ki positions ulat dena.</li>
+      <li>Negative coordinate ka sign bhool jaana.</li>
+      <li>Point plot karte waqt pehle x aur phir y move na karna.</li>
+      <li>Axes par points ko kisi quadrant mein count karna.</li>
+    </ul>
+  </section>
+
+  <section class="quiz">
+    <span class="eyebrow">9. INTERACTIVE PRACTICE</span>
+    <h2>Ab tum try karo!</h2>
+    <p>Answer choose karo aur Check answer dabao.</p>
+
+    <div class="example">
+      <p><strong>Q1.</strong> Point P(−2, 3) ka x-coordinate kya hai?</p>
+      <label class="option"><input type="radio" name="q1" value="a"> 3</label>
+      <label class="option"><input type="radio" name="q1" value="b"> −2</label>
+      <label class="option"><input type="radio" name="q1" value="c"> 2</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q1','b','a1','Sahi! Ordered pair mein pehla number x-coordinate hota hai: −2.')">Check answer</button>
+      <div class="answer-box" id="a1" role="status"></div>
+    </div>
+
+    <div class="example">
+      <p><strong>Q2.</strong> Origin ke coordinates kya hain?</p>
+      <label class="option"><input type="radio" name="q2" value="a"> (1, 1)</label>
+      <label class="option"><input type="radio" name="q2" value="b"> (0, 1)</label>
+      <label class="option"><input type="radio" name="q2" value="c"> (0, 0)</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q2','c','a2','Sahi! X-axis aur Y-axis ka intersection origin (0,0) hai.')">Check answer</button>
+      <div class="answer-box" id="a2" role="status"></div>
+    </div>
+
+    <div class="example">
+      <p><strong>Q3.</strong> Point (−4, 2) kis quadrant mein hai?</p>
+      <label class="option"><input type="radio" name="q3" value="a"> I</label>
+      <label class="option"><input type="radio" name="q3" value="b"> II</label>
+      <label class="option"><input type="radio" name="q3" value="c"> IV</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q3','b','a3','Sahi! x negative aur y positive hone par point Quadrant II mein hota hai.')">Check answer</button>
+      <div class="answer-box" id="a3" role="status"></div>
+    </div>
+
+    <div class="example">
+      <p><strong>Q4.</strong> Point (0, 5) kahan hai?</p>
+      <label class="option"><input type="radio" name="q4" value="a"> X-axis</label>
+      <label class="option"><input type="radio" name="q4" value="b"> Quadrant I</label>
+      <label class="option"><input type="radio" name="q4" value="c"> Y-axis</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q4','c','a4','Sahi! x-coordinate 0 hai, isliye point Y-axis par hai.')">Check answer</button>
+      <div class="answer-box" id="a4" role="status"></div>
+    </div>
+
+    <div class="example">
+      <p><strong>Q5.</strong> Point (3, −2) kis quadrant mein hai?</p>
+      <label class="option"><input type="radio" name="q5" value="a"> IV</label>
+      <label class="option"><input type="radio" name="q5" value="b"> II</label>
+      <label class="option"><input type="radio" name="q5" value="c"> III</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q5','a','a5','Sahi! x positive aur y negative hone par point Quadrant IV mein hota hai.')">Check answer</button>
+      <div class="answer-box" id="a5" role="status"></div>
+    </div>
+  </section>
+
+  <section class="lesson">
+    <h2>10. Quick revision</h2>
+    <ul>
+      <li>Ordered pair (x, y) point ki position batata hai.</li>
+      <li>X-axis horizontal aur Y-axis vertical hoti hai.</li>
+      <li>Origin = (0, 0).</li>
+      <li>Axes plane ko four quadrants mein divide karti hain.</li>
+      <li>Point plot karte waqt pehle x, phir y direction follow karo.</li>
+    </ul>
+    <div class="tip">
+      <strong>Study tip:</strong> Notebook mein axes banao aur (2,3), (−2,3),
+      (−2,−3), (2,−3) points khud plot karke dekho.
+    </div>
+    <a class="btn secondary" href="class9.html">All chapters</a>
+  </section>
+
+  <div class="chapter-nav">
+    <span><a href="class9.html">← Chapter list</a></span>
+    <span><a href="linear-polynomials.html">Next chapter →</a></span>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="container">
+    <a class="logo" href="index.html">Gyanora<span>.</span></a>
+    <p>Learn better. Grow smarter.</p>
+    <p class="small">Easy Hinglish learning companion. Follow your teacher and prescribed textbook too.</p>
+    <p class="small">© 2026 Gyanora</p>
+  </div>
+</footer>
+
+<script>
+function checkQuestion(name, correct, resultId, explanation) {
+  const selected = document.querySelector('input[name="' + name + '"]:checked');
+  const result = document.getElementById(resultId);
+  result.style.display = 'block';
+
+  if (!selected) {
+    result.textContent = 'Pehle ek answer choose karo.';
+    return;
+  }
+
+  if (selected.value === correct) {
+    result.textContent = explanation;
+  } else {
+    result.textContent = 'Abhi answer sahi nahi hai. Concept dobara check karke try karo.';
+  }
+}
+</script>
+<script src="app.js"></script>
+</body>
+</html>

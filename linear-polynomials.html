@@ -311,36 +311,50 @@ Easy Hinglish learning companion. Follow your teacher and prescribed textbook to
 </footer>
 
 
+
 <script>
-document.addEventListener("click", function(event) {
-  var button = event.target.closest(".check-answer");
+function setupGyanoraQuizzes() {
+  var buttons = document.querySelectorAll(".check-answer");
 
-  if (!button) return;
+  buttons.forEach(function(button) {
+    button.onclick = function() {
+      var quiz = button.closest(".quiz");
 
-  var quiz = button.closest(".quiz");
-  if (!quiz) return;
+      if (!quiz) {
+        alert("Quiz section nahi mila.");
+        return;
+      }
 
-  var feedback = quiz.querySelector(".feedback");
-  var selected = quiz.querySelector('input[type="radio"]:checked');
+      var feedback = quiz.querySelector(".feedback");
+      var selected = quiz.querySelector('input[type="radio"]:checked');
 
-  if (!feedback) return;
+      if (!feedback) {
+        alert("Feedback section nahi mila.");
+        return;
+      }
 
-  if (!selected) {
-    feedback.textContent = "Pehle ek answer select karo.";
-    feedback.dataset.result = "empty";
-    return;
-  }
+      if (!selected) {
+        feedback.textContent = "Pehle ek answer select karo.";
+        return;
+      }
 
-  if (selected.value === quiz.dataset.answer) {
-    feedback.textContent =
-      "Bilkul sahi! " + quiz.dataset.why;
-    feedback.dataset.result = "correct";
-  } else {
-    feedback.textContent =
-      "Answer galat hai. Dobara try karo!";
-    feedback.dataset.result = "incorrect";
-  }
-});
+      if (selected.value === quiz.getAttribute("data-answer")) {
+        feedback.textContent =
+          "Bilkul sahi! " + quiz.getAttribute("data-why");
+        feedback.style.color = "green";
+      } else {
+        feedback.textContent = "Answer galat hai. Dobara try karo!";
+        feedback.style.color = "red";
+      }
+    };
+  });
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", setupGyanoraQuizzes);
+} else {
+  setupGyanoraQuizzes();
+}
 </script>
 
 

@@ -1,135 +1,257 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Gyanora helps Class 6 to 10 students learn Maths with simple notes, clear examples and practice questions.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#2563eb">
-  <title>Gyanora — Learn Smart, Grow Every Day</title>
+  <meta name="description" content="Gyanora helps students learn school subjects with simple lessons, notes and practice questions.">
+  <title>Gyanora — Learn Better, Grow Smarter</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo" href="#">
-      <span class="logo-icon">G</span>
-      <span>Gyanora</span>
-    </a>
 
-    <nav>
-      <a href="#classes">Classes</a>
-      <a href="#subjects">Subjects</a>
-      <a href="#about">About</a>
-    </nav>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Gyanora<span>.</span></a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#classes">Classes</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="home">
+
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-content">
+      <div class="container hero-content">
         <span class="eyebrow">YOUR LEARNING JOURNEY STARTS HERE</span>
         <h1>Learn better.<br><span>Grow smarter.</span></h1>
         <p>
-          School ki padhai ab hogi aasaan!
-          Class 6–10 ke students ke liye simple notes,
-          Maths explanations aur practice questions.
+          School ke topics ko simple language mein samjho,
+          examples ke saath seekho aur practice karke apna confidence badhao.
         </p>
-        <a class="primary-btn" href="#classes">Explore Classes <span>→</span></a>
-        <p class="hero-note">Simple explanations. Strong concepts. Better learning.</p>
-      </div>
-
-      <div class="hero-visual" aria-label="Learning and education illustration">
-        <div class="study-card">
-          <div class="study-top">
-            <span class="mini-icon">✦</span>
-            <span>Today's learning</span>
-          </div>
-          <div class="book-illustration">📘</div>
-          <h3>One step at a time</h3>
-          <p>Har concept ko aaram se samjho.</p>
-          <div class="progress-track"><span></span></div>
-          <small>Keep learning!</small>
-        </div>
-        <div class="float-note note-one">✏️ Practice daily</div>
-        <div class="float-note note-two">✓ Learn at your pace</div>
+        <a href="#classes" class="btn btn-primary">Explore Classes</a>
       </div>
     </section>
 
+    <!-- CLASSES -->
     <section class="section" id="classes">
-      <div class="section-heading">
-        <span class="eyebrow">FIND YOUR CLASS</span>
-        <h2>Where are you learning today?</h2>
-        <p>Apni class chuno aur learning ka safar shuru karo.</p>
-      </div>
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">CHOOSE YOUR CLASS</span>
+          <h2>What do you want to learn?</h2>
+          <p>Apni class chuno aur learning shuru karo.</p>
+        </div>
 
-      <div class="class-grid">
-        <a class="class-card" href="#coming-soon">
-          <span class="class-number">06</span><h3>Class 6</h3><p>Build your basics</p><span class="card-arrow">↗</span>
-        </a>
-        <a class="class-card" href="#coming-soon">
-          <span class="class-number">07</span><h3>Class 7</h3><p>Explore new ideas</p><span class="card-arrow">↗</span>
-        </a>
-        <a class="class-card" href="#coming-soon">
-          <span class="class-number">08</span><h3>Class 8</h3><p>Strengthen concepts</p><span class="card-arrow">↗</span>
-        </a>
-        <a class="class-card" href="#coming-soon">
-          <span class="class-number">09</span><h3>Class 9</h3><p>Learn step by step</p><span class="card-arrow">↗</span>
-        </a>
-        <a class="class-card" href="#coming-soon">
-          <span class="class-number">10</span><h3>Class 10</h3><p>Prepare with confidence</p><span class="card-arrow">↗</span>
-        </a>
-      </div>
-    </section>
+        <div class="class-grid">
+          <a href="#class6-maths" class="class-card">
+            <span class="class-number">06</span>
+            <h3>Class 6</h3>
+            <p>Build your basics</p>
+            <span class="card-link">Explore lessons →</span>
+          </a>
 
-    <section class="section subjects-section" id="subjects">
-      <div class="section-heading">
-        <span class="eyebrow">LEARN YOUR WAY</span>
-        <h2>Make learning simpler</h2>
-        <p>Clear explanations to help you understand, not just memorise.</p>
-      </div>
+          <a href="#class7" class="class-card">
+            <span class="class-number">07</span>
+            <h3>Class 7</h3>
+            <p>Learn step by step</p>
+            <span class="card-link">Explore lessons →</span>
+          </a>
 
-      <div class="subject-grid">
-        <article class="subject-card">
-          <div class="subject-icon blue-icon">÷</div>
-          <h3>Maths Made Easy</h3>
-          <p>Fractions, algebra, equations aur doosre topics ke step-by-step examples.</p>
-        </article>
-        <article class="subject-card">
-          <div class="subject-icon purple-icon">▤</div>
-          <h3>Study Notes</h3>
-          <p>Chapter-wise notes aur important concepts ko simple language mein samjho.</p>
-        </article>
-        <article class="subject-card">
-          <div class="subject-icon green-icon">✓</div>
-          <h3>Practice Questions</h3>
-          <p>Khud questions solve karo aur apni understanding check karo.</p>
-        </article>
+          <a href="#class8" class="class-card">
+            <span class="class-number">08</span>
+            <h3>Class 8</h3>
+            <p>Strengthen your skills</p>
+            <span class="card-link">Explore lessons →</span>
+          </a>
+
+          <a href="#class9" class="class-card">
+            <span class="class-number">09</span>
+            <h3>Class 9</h3>
+            <p>Understand concepts</p>
+            <span class="card-link">Explore lessons →</span>
+          </a>
+
+          <a href="#class10" class="class-card">
+            <span class="class-number">10</span>
+            <h3>Class 10</h3>
+            <p>Prepare with confidence</p>
+            <span class="card-link">Explore lessons →</span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="learning-banner" id="coming-soon">
-      <div>
-        <span class="eyebrow">YOUR NEXT STEP</span>
-        <h2>Every expert starts as a learner.</h2>
-        <p>Gyanora par chapter-wise learning resources jald add kiye jayenge.</p>
+    <!-- SUBJECTS -->
+    <section class="section section-soft" id="subjects">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">LEARN YOUR WAY</span>
+          <h2>Explore learning resources</h2>
+          <p>Concepts samjho, notes padho aur questions practice karo.</p>
+        </div>
+
+        <div class="subject-grid">
+          <article class="subject-card">
+            <div class="subject-icon blue-icon">∑</div>
+            <h3>Maths Made Easy</h3>
+            <p>Maths ke concepts ko examples aur simple steps se samjho.</p>
+            <a href="#class6-maths" class="text-link">Start learning →</a>
+          </article>
+
+          <article class="subject-card">
+            <div class="subject-icon purple-icon">▤</div>
+            <h3>Study Notes</h3>
+            <p>Important topics ko revise karne ke liye clear notes.</p>
+            <a href="#class6-maths" class="text-link">Read a lesson →</a>
+          </article>
+
+          <article class="subject-card">
+            <div class="subject-icon green-icon">✓</div>
+            <h3>Practice Questions</h3>
+            <p>Questions solve karo aur apni understanding check karo.</p>
+            <a href="#class6-practice" class="text-link">Try a question →</a>
+          </article>
+        </div>
       </div>
-      <span class="banner-icon">📚</span>
     </section>
 
-    <section class="section about-section" id="about">
-      <span class="eyebrow">ABOUT GYANORA</span>
-      <h2>Learning should feel simple.</h2>
-      <p>
-        Gyanora ka goal hai Class 6–10 ke students ke liye
-        school concepts ko clear examples aur easy explanations
-        ke saath samajhna aasaan banana.
-      </p>
+    <!-- CLASS 6 MATHS LESSON -->
+    <section class="section" id="class6-maths">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">CLASS 6 · MATHEMATICS</span>
+          <h2>Fractions ko aasaan tarike se samjho</h2>
+          <p>
+            Fraction kisi poori cheez ko barabar hisson mein baantne
+            par unmein se liye gaye hisson ko dikhata hai.
+          </p>
+        </div>
+
+        <div class="subject-grid">
+          <article class="subject-card">
+            <div class="subject-icon blue-icon">½</div>
+            <h3>1. Fraction kya hai?</h3>
+            <p>
+              Socho ek roti ke 2 barabar hisse kiye aur tumne 1 hissa liya.
+              Tumne roti ka 1/2 hissa liya.
+            </p>
+            <p><strong>Example:</strong> 1/2 = aadha.</p>
+          </article>
+
+          <article class="subject-card">
+            <div class="subject-icon purple-icon">¾</div>
+            <h3>2. Numerator aur denominator</h3>
+            <p>
+              Fraction 3/4 mein upar wala number 3 numerator hai.
+              Neeche wala number 4 denominator hai.
+            </p>
+            <p>
+              Numerator batata hai kitne hisse liye.
+              Denominator batata hai kul kitne barabar hisse hain.
+            </p>
+          </article>
+
+          <article class="subject-card">
+            <div class="subject-icon green-icon">+</div>
+            <h3>3. Fractions jodna</h3>
+            <p>
+              Jab denominator same ho, toh numerator ko jod sakte hain.
+            </p>
+            <p><strong>Example:</strong> 1/4 + 2/4 = 3/4.</p>
+          </article>
+        </div>
+
+        <!-- PRACTICE -->
+        <div class="subject-card practice-card" id="class6-practice">
+          <span class="eyebrow">TEST YOUR UNDERSTANDING</span>
+          <h3>Practice Question</h3>
+          <p>
+            Ek pizza ke 5 barabar slices hain. Tum 2 slices khaate ho.
+            Tumne pizza ka kitna hissa khaya?
+          </p>
+
+          <details>
+            <summary>Answer dekho</summary>
+            <p>
+              <strong>Answer: 2/5.</strong>
+              Kul 5 barabar slices the aur tumne unmein se 2 khaye.
+              Isliye fraction 2/5 hoga.
+            </p>
+          </details>
+        </div>
+      </div>
     </section>
+
+    <!-- OTHER CLASSES -->
+    <section class="section section-soft" id="other-classes">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">MORE TO EXPLORE</span>
+          <h2>Your next learning step</h2>
+          <p>Baaki classes ka content dheere-dheere add kiya jayega.</p>
+        </div>
+
+        <div class="subject-grid">
+          <article class="subject-card" id="class7">
+            <div class="subject-icon blue-icon">07</div>
+            <h3>Class 7</h3>
+            <p>Class 7 ke lessons aur practice questions jald aayenge.</p>
+            <span class="text-link">Coming Soon</span>
+          </article>
+
+          <article class="subject-card" id="class8">
+            <div class="subject-icon purple-icon">08</div>
+            <h3>Class 8</h3>
+            <p>Class 8 ke lessons aur practice questions jald aayenge.</p>
+            <span class="text-link">Coming Soon</span>
+          </article>
+
+          <article class="subject-card" id="class9">
+            <div class="subject-icon green-icon">09</div>
+            <h3>Class 9</h3>
+            <p>Class 9 ke lessons aur practice questions jald aayenge.</p>
+            <span class="text-link">Coming Soon</span>
+          </article>
+
+          <article class="subject-card" id="class10">
+            <div class="subject-icon blue-icon">10</div>
+            <h3>Class 10</h3>
+            <p>Class 10 ke lessons aur practice questions jald aayenge.</p>
+            <span class="text-link">Coming Soon</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-content">
+        <span class="eyebrow">ABOUT GYANORA</span>
+        <h2>Learning made simpler for everyone.</h2>
+        <p>
+          Gyanora ek educational website hai jiska goal school learning ko
+          simple, clear aur accessible banana hai. Yahan students lessons,
+          examples aur practice questions ke through seekh sakte hain.
+        </p>
+        <a href="#classes" class="btn btn-primary">Start Learning</a>
+      </div>
+    </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <a class="logo" href="#"><span class="logo-icon">G</span><span>Gyanora</span></a>
-    <p>Learn Smart. Grow Every Day.</p>
-    <small>© 2026 Gyanora. Built for curious minds.</small>
+    <div class="container footer-content">
+      <a href="#home" class="logo">Gyanora<span>.</span></a>
+      <p>Learn better. Grow smarter.</p>
+      <p class="copyright">© 2026 Gyanora. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="app.js"></script>

@@ -1,1 +1,352 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#2563eb"><title>Predicting What Comes Next: Exploring Sequences and Progressions | Gyanora</title><link rel="stylesheet" href="style.css"></head><body><header><div class="container nav"><a class="logo" href="index.html">Gyanora<span>.</span></a><nav class="navlinks"><a href="index.html">Home</a><a href="class9.html">Class 9 Maths</a><a href="class9.html#chapters">Chapters</a></nav></div></header><main><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="class9.html">Class 9 Maths</a> / Chapter 8</div><section class="section"><span class="eyebrow">CLASS 9 MATHS · CHAPTER 8 OF 8</span><h1>Predicting What Comes Next: Exploring Sequences and Progressions</h1><p class="lead">Aaj ka goal: concept ko samajhna, example khud solve karna aur practice se check karna.</p></section><section class="lesson"><h2>1. Easy explanation</h2><p>Sequence numbers ki ordered list hai. Har baar same number add ho to arithmetic sequence hoti hai.</p><div class="tip"><strong>Daily-life example:</strong> Har hafte ₹50 bachao: savings 50,100,150,200…</div></section><section class="lesson"><h2>2. Important formula / idea</h2><div class="formula">AP nth term: aₙ=a+(n−1)d</div><p class="small">Formula yaad karne ke saath yeh samjho ki use kab aur kyun karte hain.</p></section><section class="lesson"><h2>3. Step-by-step solved example</h2><div class="example"><strong>Example:</strong><p>2,5,8,11… har baar 3 add hota hai; next term 14.</p></div></section><section class="quiz" data-answer="1" data-why="Har term mein 4 add hota hai; 17+4=21."><span class="eyebrow">4. INTERACTIVE PRACTICE</span><h2>Ab tum try karo!</h2><p>5,9,13,17,… mein next number?</p><label class="option"><input type="radio" name="answer" value="0"> 20</label><label class="option"><input type="radio" name="answer" value="1"> 21</label><label class="option"><input type="radio" name="answer" value="2"> 22</label><button class="btn check-answer" type="button">Check answer</button><div class="feedback" role="status"></div></section><section class="lesson"><h2>5. Quick revision</h2><p>Sequence numbers ki ordered list hai. Har baar same number add ho to arithmetic sequence hoti hai.</p><a class="btn secondary" href="class9.html">All chapters</a></section><div class="chapter-nav"><span><a href="probability.html">← Previous chapter</a></span><span><a href="class9.html">Back to chapters →</a></span></div></div></main><footer><div class="container"><a class="logo" href="index.html">Gyanora<span>.</span></a><p>Learn better. Grow smarter.</p><p class="small">Easy Hinglish learning companion. Follow your teacher and prescribed textbook too.</p><p class="small">© 2026 Gyanora</p></div></footer><script src="app.js"></script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2563eb">
+  <title>Predicting What Comes Next: Exploring Sequences and Progressions | Gyanora</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .diagram {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin: 18px auto;
+      border-radius: 14px;
+      background: #f8fafc;
+    }
+    .answer-box {
+      display: none;
+      margin-top: 12px;
+      padding: 14px;
+      border-radius: 10px;
+      background: #eff6ff;
+    }
+    .practice-btn {
+      margin-top: 10px;
+      padding: 10px 15px;
+      border: 0;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .formula {
+      overflow-wrap: anywhere;
+      font-size: 1.12rem;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">Gyanora<span>.</span></a>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="class9.html">Class 9 Maths</a>
+      <a href="class9.html#chapters">Chapters</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="container">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> /
+    <a href="class9.html">Class 9 Maths</a> / Sequences
+  </div>
+
+  <section class="section">
+    <span class="eyebrow">CLASS 9 MATHS · SEQUENCES</span>
+    <h1>Predicting What Comes Next: Exploring Sequences and Progressions</h1>
+    <p class="lead">
+      Aaj hum number patterns ko samjhenge aur seekhenge ki kisi sequence ka
+      next number kaise find karte hain.
+    </p>
+  </section>
+
+  <section class="lesson">
+    <h2>1. Sequence kya hoti hai?</h2>
+    <p>
+      Sequence numbers ki ek ordered list hoti hai. Numbers kisi rule ke
+      according aate hain. Humein rule samajhkar next term nikalni hoti hai.
+    </p>
+
+    <div class="tip">
+      <strong>Daily-life example:</strong> Agar tum har hafte ₹50 bachate ho,
+      to total savings 50, 100, 150, 200, 250... ho sakti hain.
+    </div>
+
+    <svg class="diagram" viewBox="0 0 360 150" role="img"
+         aria-label="Sequence 2, 4, 6, 8, 10 ka number pattern">
+      <rect x="10" y="10" width="340" height="130" rx="15" fill="#eff6ff"/>
+      <g fill="#dbeafe" stroke="#2563eb" stroke-width="2">
+        <rect x="20" y="40" width="52" height="52" rx="10"/>
+        <rect x="87" y="40" width="52" height="52" rx="10"/>
+        <rect x="154" y="40" width="52" height="52" rx="10"/>
+        <rect x="221" y="40" width="52" height="52" rx="10"/>
+        <rect x="288" y="40" width="52" height="52" rx="10"/>
+      </g>
+      <g fill="#1d4ed8" font-size="19" font-weight="bold" text-anchor="middle">
+        <text x="46" y="72">2</text>
+        <text x="113" y="72">4</text>
+        <text x="180" y="72">6</text>
+        <text x="247" y="72">8</text>
+        <text x="314" y="72">10</text>
+      </g>
+      <text x="180" y="120" text-anchor="middle" fill="#334155" font-size="14">Har step mein +2</text>
+    </svg>
+  </section>
+
+  <section class="lesson">
+    <h2>2. Sequence ke important words</h2>
+    <ul>
+      <li><strong>Term:</strong> Sequence ka har individual number.</li>
+      <li><strong>First term (a):</strong> Sequence ka pehla number.</li>
+      <li><strong>Common difference (d):</strong> AP mein consecutive terms ka difference.</li>
+      <li><strong>nth term:</strong> Sequence ki n-th position par aane wala number.</li>
+    </ul>
+    <p>
+      Example: 3, 7, 11, 15...
+    </p>
+    <p>
+      First term a = 3 aur common difference d = 7 − 3 = 4.
+    </p>
+  </section>
+
+  <section class="lesson">
+    <h2>3. Arithmetic Progression (AP)</h2>
+    <p>
+      Jab kisi sequence mein har consecutive term ke beech difference same
+      hota hai, use Arithmetic Progression ya AP kehte hain.
+    </p>
+
+    <div class="example">
+      <p><strong>AP ke examples:</strong></p>
+      <ul>
+        <li>2, 5, 8, 11, 14... — har baar +3</li>
+        <li>20, 17, 14, 11... — har baar −3</li>
+        <li>4, 4, 4, 4... — har baar +0</li>
+      </ul>
+    </div>
+
+    <p>
+      Common difference nikalne ke liye second term mein se first term
+      subtract karo. Phir check karo ki baaki terms ka difference bhi same hai.
+    </p>
+
+    <div class="formula">d = second term − first term</div>
+  </section>
+
+  <section class="lesson">
+    <h2>4. AP ka nth-term formula</h2>
+    <div class="formula">aₙ = a + (n − 1)d</div>
+
+    <p>Is formula mein:</p>
+    <ul>
+      <li><strong>aₙ:</strong> n-th term.</li>
+      <li><strong>a:</strong> First term.</li>
+      <li><strong>n:</strong> Term ki position.</li>
+      <li><strong>d:</strong> Common difference.</li>
+    </ul>
+
+    <div class="tip">
+      <strong>Important:</strong> Formula mein (n − 1) hota hai, n nahi.
+      First term tak pahunchne ke liye zero jumps chahiye, isliye n-th term
+      ke liye n − 1 jumps hote hain.
+    </div>
+  </section>
+
+  <section class="lesson">
+    <h2>5. Step-by-step solved example</h2>
+    <div class="example">
+      <strong>Question:</strong>
+      <p>Sequence 2, 5, 8, 11... ki 6th term find karo.</p>
+
+      <p><strong>Step 1: First term identify karo.</strong></p>
+      <div class="formula">a = 2</div>
+
+      <p><strong>Step 2: Common difference find karo.</strong></p>
+      <div class="formula">d = 5 − 2 = 3</div>
+
+      <p><strong>Step 3: Position likho.</strong></p>
+      <div class="formula">n = 6</div>
+
+      <p><strong>Step 4: Formula apply karo.</strong></p>
+      <div class="formula">
+        aₙ = a + (n − 1)d
+        <br>
+        a₆ = 2 + (6 − 1) × 3
+        <br>
+        a₆ = 2 + 15 = 17
+      </div>
+
+      <p><strong>Answer:</strong> 6th term = 17.</p>
+    </div>
+  </section>
+
+  <section class="lesson">
+    <h2>6. Sequence ko diagram se samjho</h2>
+    <p>Sequence 5, 9, 13, 17, 21... mein har baar 4 add hota hai.</p>
+
+    <svg class="diagram" viewBox="0 0 360 170" role="img"
+         aria-label="Sequence mein har term tak pahunchne par 4 add hota hai">
+      <rect x="10" y="10" width="340" height="150" rx="15" fill="#eff6ff"/>
+      <g fill="#dbeafe" stroke="#2563eb" stroke-width="2">
+        <rect x="20" y="42" width="48" height="48" rx="8"/>
+        <rect x="88" y="42" width="48" height="48" rx="8"/>
+        <rect x="156" y="42" width="48" height="48" rx="8"/>
+        <rect x="224" y="42" width="48" height="48" rx="8"/>
+        <rect x="292" y="42" width="48" height="48" rx="8"/>
+      </g>
+      <g fill="#1d4ed8" font-size="17" font-weight="bold" text-anchor="middle">
+        <text x="44" y="72">5</text>
+        <text x="112" y="72">9</text>
+        <text x="180" y="72">13</text>
+        <text x="248" y="72">17</text>
+        <text x="316" y="72">21</text>
+      </g>
+      <g fill="#166534" font-size="13" text-anchor="middle">
+        <text x="78" y="111">+4</text>
+        <text x="146" y="111">+4</text>
+        <text x="214" y="111">+4</text>
+        <text x="282" y="111">+4</text>
+      </g>
+      <text x="180" y="141" text-anchor="middle" font-size="13" fill="#334155">Common difference = 4</text>
+    </svg>
+  </section>
+
+  <section class="lesson">
+    <h2>7. AP ka sum: basic idea</h2>
+    <p>
+      Kabhi-kabhi humein sirf next term nahi, balki kai terms ka total bhi
+      nikalna hota hai. Use sum of terms kehte hain.
+    </p>
+    <p>Example: 2 + 4 + 6 + 8 = 20.</p>
+    <p>
+      AP ke first n terms ka sum nikalne ka formula hai:
+    </p>
+    <div class="formula">Sₙ = n/2 × [2a + (n − 1)d]</div>
+    <p class="small">
+      Formula tab use karo jab AP ke first n terms ka sum poochha gaya ho.
+      Pehle a, d aur n identify karo.
+    </p>
+  </section>
+
+  <section class="lesson">
+    <h2>8. Common mistakes</h2>
+    <ul>
+      <li>Common difference ka sign galat lena.</li>
+      <li>nth-term formula mein (n − 1) ki jagah n use karna.</li>
+      <li>Term ki position aur term ki value ko confuse karna.</li>
+      <li>Har number pattern ko AP maan lena, bina difference check kiye.</li>
+    </ul>
+  </section>
+
+  <section class="quiz">
+    <span class="eyebrow">9. INTERACTIVE PRACTICE</span>
+    <h2>Ab tum try karo!</h2>
+    <p>Har question ka answer choose karo aur Check answer dabao.</p>
+
+    <div class="example">
+      <p><strong>Q1.</strong> 5, 9, 13, 17... mein next number kya hai?</p>
+      <label class="option"><input type="radio" name="q1" value="a"> 20</label>
+      <label class="option"><input type="radio" name="q1" value="b"> 21</label>
+      <label class="option"><input type="radio" name="q1" value="c"> 22</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q1','b','a1','Sahi! Har baar 4 add hota hai, isliye 17 + 4 = 21.')">Check answer</button>
+      <div class="answer-box" id="a1" role="status"></div>
+    </div>
+
+    <div class="example">
+      <p><strong>Q2.</strong> AP 3, 7, 11, 15... ka common difference kya hai?</p>
+      <label class="option"><input type="radio" name="q2" value="a"> 3</label>
+      <label class="option"><input type="radio" name="q2" value="b"> 4</label>
+      <label class="option"><input type="radio" name="q2" value="c"> 7</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q2','b','a2','Sahi! 7 − 3 = 4 aur har term mein 4 add hota hai.')">Check answer</button>
+      <div class="answer-box" id="a2" role="status"></div>
+    </div>
+
+    <div class="example">
+      <p><strong>Q3.</strong> 2, 5, 8, 11... ki 5th term kya hai?</p>
+      <label class="option"><input type="radio" name="q3" value="a"> 12</label>
+      <label class="option"><input type="radio" name="q3" value="b"> 14</label>
+      <label class="option"><input type="radio" name="q3" value="c"> 15</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q3','b','a3','Sahi! Terms hain 2, 5, 8, 11, 14. Isliye 5th term 14 hai.')">Check answer</button>
+      <div class="answer-box" id="a3" role="status"></div>
+    </div>
+
+    <div class="example">
+      <p><strong>Q4.</strong> AP mein a = 4, d = 2. 4th term kya hogi?</p>
+      <label class="option"><input type="radio" name="q4" value="a"> 8</label>
+      <label class="option"><input type="radio" name="q4" value="b"> 10</label>
+      <label class="option"><input type="radio" name="q4" value="c"> 12</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q4','b','a4','Sahi! a₄ = 4 + (4 − 1) × 2 = 10.')">Check answer</button>
+      <div class="answer-box" id="a4" role="status"></div>
+    </div>
+
+    <div class="example">
+      <p><strong>Q5.</strong> Kaunsi list AP hai?</p>
+      <label class="option"><input type="radio" name="q5" value="a"> 2, 4, 8, 16</label>
+      <label class="option"><input type="radio" name="q5" value="b"> 1, 4, 7, 10</label>
+      <label class="option"><input type="radio" name="q5" value="c"> 1, 2, 4, 7</label>
+      <button class="practice-btn" type="button" onclick="checkQuestion('q5','b','a5','Sahi! Har baar 3 add hota hai, isliye yeh AP hai.')">Check answer</button>
+      <div class="answer-box" id="a5" role="status"></div>
+    </div>
+  </section>
+
+  <section class="lesson">
+    <h2>10. Quick revision</h2>
+    <ul>
+      <li>Sequence numbers ki ordered list hoti hai.</li>
+      <li>AP mein common difference same rehta hai.</li>
+      <li>Common difference: d = second term − first term.</li>
+      <li>nth term: aₙ = a + (n − 1)d.</li>
+      <li>First n terms ka sum: Sₙ = n/2 × [2a + (n − 1)d].</li>
+    </ul>
+    <div class="tip">
+      <strong>Study tip:</strong> Formula lagane se pehle first term, common difference
+      aur required term ki position likh lo.
+    </div>
+    <a class="btn secondary" href="class9.html">All chapters</a>
+  </section>
+
+  <div class="chapter-nav">
+    <span><a href="probability.html">← Previous chapter</a></span>
+    <span><a href="class9.html">Back to chapters →</a></span>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="container">
+    <a class="logo" href="index.html">Gyanora<span>.</span></a>
+    <p>Learn better. Grow smarter.</p>
+    <p class="small">Easy Hinglish learning companion. Follow your teacher and prescribed textbook too.</p>
+    <p class="small">© 2026 Gyanora</p>
+  </div>
+</footer>
+
+<script>
+function checkQuestion(name, correct, resultId, explanation) {
+  const selected = document.querySelector('input[name="' + name + '"]:checked');
+  const result = document.getElementById(resultId);
+  result.style.display = 'block';
+
+  if (!selected) {
+    result.textContent = 'Pehle ek answer choose karo.';
+    return;
+  }
+
+  if (selected.value === correct) {
+    result.textContent = explanation;
+  } else {
+    result.textContent = 'Abhi answer sahi nahi hai. Pattern ya formula dobara check karke try karo.';
+  }
+}
+</script>
+<script src="app.js"></script>
+</body>
+</html>

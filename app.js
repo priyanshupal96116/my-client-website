@@ -1,11 +1,1 @@
-console.log("JavaScript is working!");
-
-document.body.insertAdjacentHTML(
-  "beforeend",
-  '<button id="testBtn">Click Me</button><p id="result"></p>'
-);
-
-document.getElementById("testBtn").addEventListener("click", function () {
-  document.getElementById("result").textContent =
-    "Success! JavaScript is working.";
-});
+document.addEventListener('click',function(e){const b=e.target.closest('.check-answer');if(!b)return;const q=b.closest('.quiz'),s=q.querySelector('input[name=answer]:checked'),f=q.querySelector('.feedback');f.className='feedback show';if(!s){f.classList.add('wrong');f.textContent='Pehle ek option select karo.';return;}if(Number(s.value)===Number(q.dataset.answer)){f.classList.add('correct');f.textContent='Bilkul sahi! 🎉 '+q.dataset.why;}else{f.classList.add('wrong');f.textContent='Abhi sahi nahi. '+q.dataset.why;}});const search=document.getElementById('chapterSearch');if(search)search.addEventListener('input',function(){const v=this.value.toLowerCase();document.querySelectorAll('.chapter-card').forEach(c=>c.style.display=c.dataset.search.includes(v)?'flex':'none');});

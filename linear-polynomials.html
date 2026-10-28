@@ -341,14 +341,17 @@ alert("Selected answer: " + (selected ? selected.value : "NONE"));
         return;
       }
 
-      if (selected.value === quiz.getAttribute("data-answer")) {
-        feedback.textContent =
-          "Bilkul sahi! " + quiz.getAttribute("data-why");
-        feedback.style.color = "green";
-      } else {
-        feedback.textContent = "Answer galat hai. Dobara try karo!";
-        feedback.style.color = "red";
-      }
+      
+if (selected.value === quiz.getAttribute("data-answer")) {
+  alert("Answer match hua!");
+  feedback.textContent = "Bilkul sahi! " + quiz.getAttribute("data-why");
+  feedback.style.color = "green";
+} else {
+  alert("Answer match nahi hua. Selected: " + selected.value +
+        ", Correct: " + quiz.getAttribute("data-answer"));
+  feedback.textContent = "Answer galat hai. Dobara try karo!";
+  feedback.style.color = "red";
+}
     };
   });
 }

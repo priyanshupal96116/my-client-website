@@ -315,11 +315,9 @@ Easy Hinglish learning companion. Follow your teacher and prescribed textbook to
 <script>
 function setupGyanoraQuizzes() {
 var buttons = document.querySelectorAll(".check-answer");
-alert("Quiz buttons mile: " + buttons.length);
   
   buttons.forEach(function(button) {
     button.onclick = function() {
-      alert("Button click detect hua!");
       var quiz = button.closest(".quiz");
 
       if (!quiz) {
@@ -343,14 +341,13 @@ alert("Selected answer: " + (selected ? selected.value : "NONE"));
 
       
 if (selected.value === quiz.getAttribute("data-answer")) {
-  alert("Answer match hua!");
-  feedback.textContent = "Bilkul sahi! " + quiz.getAttribute("data-why");
-  feedback.style.color = "green";
+  feedback.innerHTML = "✅ Bilkul sahi! " + quiz.getAttribute("data-why");
+feedback.style.cssText = "display:block!important; color:green!important; background:#dcfce7; padding:12px; margin-top:12px; border-radius:8px;";
 } else {
   alert("Answer match nahi hua. Selected: " + selected.value +
         ", Correct: " + quiz.getAttribute("data-answer"));
-  feedback.textContent = "Answer galat hai. Dobara try karo!";
-  feedback.style.color = "red";
+  feedback.innerHTML = "❌ Answer galat hai. Dobara try karo!";
+feedback.style.cssText = "display:block!important; color:#b91c1c!important; background:#fee2e2; padding:12px; margin-top:12px; border-radius:8px;";
 }
     };
   });

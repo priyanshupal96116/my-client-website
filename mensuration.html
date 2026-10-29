@@ -18,6 +18,15 @@
 .reveal{padding:10px 14px;border:0;border-radius:9px;background:#2563eb;color:white;cursor:pointer;margin-top:10px}
 .note{padding:13px;border-left:4px solid #2563eb;background:#f1f6ff}
 </style>
+<!-- Google Analytics: GYANORA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F06TS6JVC5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-F06TS6JVC5');
+</script>
+
 </head>
 <body>
 <header><div class="container nav">
@@ -212,43 +221,38 @@
 </section>
 
 <section class="lesson">
-<h2>10. Interactive practice</h2>
-<p>Pehle khud solve karo, phir answer check karo.</p>
-
-<div class="practice">
-<h3>Question 1</h3>
-<p>Rectangle ki length 7 cm aur width 4 cm hai. Area?</p>
-<button class="reveal" onclick="showAnswer('ans1')">Answer check karo</button>
-<div class="answer" id="ans1">Area = 7 × 4 = 28 cm².</div>
-</div>
-
-<div class="practice">
-<h3>Question 2</h3>
-<p>Square ki side 6 cm hai. Perimeter?</p>
-<button class="reveal" onclick="showAnswer('ans2')">Answer check karo</button>
-<div class="answer" id="ans2">Perimeter = 4 × 6 = 24 cm.</div>
-</div>
-
-<div class="practice">
-<h3>Question 3</h3>
-<p>Triangle ka base 8 cm aur height 5 cm hai. Area?</p>
-<button class="reveal" onclick="showAnswer('ans3')">Answer check karo</button>
-<div class="answer" id="ans3">Area = ½ × 8 × 5 = 20 cm².</div>
-</div>
-
-<div class="practice">
-<h3>Question 4</h3>
-<p>Circle ka radius 3 cm hai. Circumference?</p>
-<button class="reveal" onclick="showAnswer('ans4')">Answer check karo</button>
-<div class="answer" id="ans4">C = 2πr = 2 × π × 3 = 6π cm, lagbhag 18.85 cm.</div>
-</div>
-
-<div class="practice">
-<h3>Question 5</h3>
-<p>Parallelogram ka base 9 cm aur height 4 cm hai. Area?</p>
-<button class="reveal" onclick="showAnswer('ans5')">Answer check karo</button>
-<div class="answer" id="ans5">Area = 9 × 4 = 36 cm².</div>
-</div>
+<h2>10. Interactive practice — MCQ Quiz</h2>
+<p>Har question mein ek option chuno, phir Check Answer dabao.</p>
+<div class="practice mensuration-quiz" data-answer="1" data-why="Rectangle ka area = length × width = 7 × 4 = 28 cm²."><h3>Question 1</h3><p>Rectangle ki length 7 cm aur width 4 cm hai. Area?</p>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q1" value="0"> 22 cm²</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q1" value="1"> 28 cm²</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q1" value="2"> 11 cm²</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q1" value="3"> 14 cm²</label>
+<button type="button" class="check-answer">Check Answer</button><div class="feedback" aria-live="polite"></div></div>
+<div class="practice mensuration-quiz" data-answer="2" data-why="Square ka perimeter = 4 × side = 4 × 6 = 24 cm."><h3>Question 2</h3><p>Square ki side 6 cm hai. Perimeter?</p>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q2" value="0"> 12 cm</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q2" value="1"> 36 cm</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q2" value="2"> 24 cm</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q2" value="3"> 18 cm</label>
+<button type="button" class="check-answer">Check Answer</button><div class="feedback" aria-live="polite"></div></div>
+<div class="practice mensuration-quiz" data-answer="3" data-why="Triangle ka area = ½ × base × height = 20 cm²."><h3>Question 3</h3><p>Triangle ka base 8 cm aur height 5 cm hai. Area?</p>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q3" value="0"> 40 cm²</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q3" value="1"> 13 cm²</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q3" value="2"> 10 cm²</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q3" value="3"> 20 cm²</label>
+<button type="button" class="check-answer">Check Answer</button><div class="feedback" aria-live="polite"></div></div>
+<div class="practice mensuration-quiz" data-answer="0" data-why="Circumference = 2πr = 2π × 3 = 6π cm."><h3>Question 4</h3><p>Circle ka radius 3 cm hai. Circumference?</p>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q4" value="0"> 6π cm</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q4" value="1"> 3π cm</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q4" value="2"> 9π cm</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q4" value="3"> 2π cm</label>
+<button type="button" class="check-answer">Check Answer</button><div class="feedback" aria-live="polite"></div></div>
+<div class="practice mensuration-quiz" data-answer="2" data-why="Parallelogram ka area = base × height = 9 × 4 = 36 cm²."><h3>Question 5</h3><p>Parallelogram ka base 9 cm aur height 4 cm hai. Area?</p>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q5" value="0"> 13 cm²</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q5" value="1"> 26 cm²</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q5" value="2"> 36 cm²</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="mensuration-q5" value="3"> 18 cm²</label>
+<button type="button" class="check-answer">Check Answer</button><div class="feedback" aria-live="polite"></div></div>
 </section>
 
 <section class="lesson">
@@ -261,6 +265,104 @@
 <p><strong>Trapezium:</strong> A = ½(a + b)h</p>
 <a class="btn secondary" href="class9.html">All chapters</a>
 </section>
+
+<section class="gyanora-animation-lab" data-kind="mensuration">
+  <p>INTERACTIVE LEARNING LAB</p>
+  <h2>3D Shape Explorer</h2>
+  <p class="lab-intro">Rotate a solid using the slider.</p>
+  <div class="lab-stage">
+    <svg viewBox="0 0 620 280" role="img" aria-label="3D Shape Explorer interactive animation"></svg>
+  </div>
+  <div class="lab-controls">
+    <label class="lab-slider">Explore value
+      <input type="range" min="0" max="10" value="5" step="1">
+    </label>
+    <button type="button" data-play>▶ Play</button>
+    <button type="button" class="lab-reset" data-reset>↺ Reset</button>
+  </div>
+  <p class="lab-readout" aria-live="polite">Animation ready.</p>
+  <p class="lab-tip">Tip: slider badlo, Play dabao, aur Reset se shuru karo.</p>
+</section>
+
+<section class="lesson written-practice" id="written-practice">
+<p class="eyebrow">NOTEBOOK PRACTICE • 10 QUESTIONS</p>
+<h2>Written Practice: Mensuration</h2>
+<p>Har question pehle notebook mein khud solve karo. Phir <strong>Show Full Solution</strong> kholkar apne steps compare karo.</p>
+<div class="written-progress"><span>Easy → Medium → Challenge</span><span>80 questions across 8 chapters</span></div>
+<article class="written-question" id="written-q1">
+<p class="written-level">Easy • Question 1</p>
+<h3>Find the perimeter of a rectangle 9 cm long and 4 cm wide.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> P=2(l+w)=2(9+4)=2×13.</p>
+<p class="final-answer"><strong>Final answer:</strong> 26 cm</p>
+</div></details></article>
+<article class="written-question" id="written-q2">
+<p class="written-level">Easy • Question 2</p>
+<h3>Find the area of a square with side 7 cm.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> A=s²=7².</p>
+<p class="final-answer"><strong>Final answer:</strong> 49 cm²</p>
+</div></details></article>
+<article class="written-question" id="written-q3">
+<p class="written-level">Easy • Question 3</p>
+<h3>Find the area of a triangle with base 12 cm and height 5 cm.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> A=½bh=½×12×5.</p>
+<p class="final-answer"><strong>Final answer:</strong> 30 cm²</p>
+</div></details></article>
+<article class="written-question" id="written-q4">
+<p class="written-level">Easy • Question 4</p>
+<h3>Find the area of a parallelogram with base 11 cm and height 3 cm.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Area = base × perpendicular height = 11×3.</p>
+<p class="final-answer"><strong>Final answer:</strong> 33 cm²</p>
+</div></details></article>
+<article class="written-question" id="written-q5">
+<p class="written-level">Medium • Question 5</p>
+<h3>A circle has radius 7 cm. Find circumference using π=22/7.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> C=2πr=2×(22/7)×7; cancel 7.</p>
+<p class="final-answer"><strong>Final answer:</strong> 44 cm</p>
+</div></details></article>
+<article class="written-question" id="written-q6">
+<p class="written-level">Medium • Question 6</p>
+<h3>Find the area of a circle with radius 5 cm in terms of π.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> A=πr²=π×5².</p>
+<p class="final-answer"><strong>Final answer:</strong> 25π cm²</p>
+</div></details></article>
+<article class="written-question" id="written-q7">
+<p class="written-level">Medium • Question 7</p>
+<h3>A trapezium has parallel sides 8 cm and 14 cm and height 6 cm. Find area.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> A=½(a+b)h=½(8+14)×6=½×22×6.</p>
+<p class="final-answer"><strong>Final answer:</strong> 66 cm²</p>
+</div></details></article>
+<article class="written-question" id="written-q8">
+<p class="written-level">Medium • Question 8</p>
+<h3>Convert 2.5 m² into cm².</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> 1 m²=10,000 cm². Multiply 2.5×10,000.</p>
+<p class="final-answer"><strong>Final answer:</strong> 25,000 cm²</p>
+</div></details></article>
+<article class="written-question" id="written-q9">
+<p class="written-level">Challenge • Question 9</p>
+<h3>A rectangle has area 84 cm² and length 12 cm. Find width and perimeter.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> w=A/l=84/12=7 cm. P=2(12+7)=38 cm.</p>
+<p class="final-answer"><strong>Final answer:</strong> Width 7 cm; perimeter 38 cm</p>
+</div></details></article>
+<article class="written-question" id="written-q10">
+<p class="written-level">Challenge • Question 10</p>
+<h3>A circular garden has radius 14 m. Find area using π=22/7.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> A=πr²=(22/7)×14×14=22×2×14.</p>
+<p class="final-answer"><strong>Final answer:</strong> 616 m²</p>
+</div></details></article>
+<p class="tip"><strong>Study rule:</strong> Solution dekhne se pehle apni working likho. Answer alag aaye to formula aur calculation dobara check karo.</p>
+<a class="btn secondary" href="class9.html">All chapters</a>
+</section>
+
 
 <div class="chapter-nav">
 <span><a href="geometry.html">← Previous chapter</a></span>
@@ -276,11 +378,39 @@
 </div></footer>
 
 <script src="app.js"></script>
+
+<script>
+document.querySelectorAll(".mensuration-quiz .check-answer").forEach(function(button) {
+  button.addEventListener("click", function() {
+    const quiz = button.closest(".mensuration-quiz");
+    const selected = quiz.querySelector('input[type="radio"]:checked');
+    const feedback = quiz.querySelector(".feedback");
+
+    feedback.classList.add("show");
+    feedback.classList.remove("correct", "wrong");
+
+    if (!selected) {
+      feedback.textContent = "Pehle ek option chuno.";
+      return;
+    }
+
+    if (selected.value === quiz.dataset.answer) {
+      feedback.classList.add("correct");
+      feedback.textContent = "Bilkul sahi! " + quiz.dataset.why;
+    } else {
+      feedback.classList.add("wrong");
+      feedback.textContent = "Jawab abhi sahi nahi hai. Dobara try karo.";
+    }
+  });
+});
+</script>
+
 <script>
 function showAnswer(id){
 const el=document.getElementById(id);
 if(el){el.style.display=el.style.display==="block"?"none":"block";}
 }
 </script>
+  <script src="gyanora-animations.js" defer></script>
 </body>
 </html>

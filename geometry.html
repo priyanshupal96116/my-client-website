@@ -17,6 +17,15 @@
 .reveal{padding:10px 14px;border:0;border-radius:9px;background:#2563eb;color:white;cursor:pointer;margin-top:10px}
 .note{padding:13px;border-left:4px solid #2563eb;background:#f1f6ff}
 </style>
+<!-- Google Analytics: GYANORA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F06TS6JVC5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-F06TS6JVC5');
+</script>
+
 </head>
 <body>
 <header><div class="container nav">
@@ -262,43 +271,38 @@
 </section>
 
 <section class="lesson">
-<h2>11. Interactive practice</h2>
-<p>Pehle khud solve karo, phir answer kholo.</p>
-
-<div class="practice">
-<h3>Question 1</h3>
-<p>Straight line par ek angle 48° hai. Doosra angle?</p>
-<button class="reveal" onclick="showAnswer('ans1')">Answer check karo</button>
-<div class="answer" id="ans1">180° − 48° = 132°.</div>
-</div>
-
-<div class="practice">
-<h3>Question 2</h3>
-<p>Ek angle 83° hai. Uska vertically opposite angle?</p>
-<button class="reveal" onclick="showAnswer('ans2')">Answer check karo</button>
-<div class="answer" id="ans2">83°, kyunki vertically opposite angles equal hote hain.</div>
-</div>
-
-<div class="practice">
-<h3>Question 3</h3>
-<p>Triangle ke angles 40° aur 75° hain. Third angle?</p>
-<button class="reveal" onclick="showAnswer('ans3')">Answer check karo</button>
-<div class="answer" id="ans3">180° − 40° − 75° = 65°.</div>
-</div>
-
-<div class="practice">
-<h3>Question 4</h3>
-<p>Radius 5 cm ho to diameter?</p>
-<button class="reveal" onclick="showAnswer('ans4')">Answer check karo</button>
-<div class="answer" id="ans4">Diameter = 2 × 5 = 10 cm.</div>
-</div>
-
-<div class="practice">
-<h3>Question 5</h3>
-<p>Quadrilateral ke teen interior angles 80°, 90° aur 100° hain. Fourth angle?</p>
-<button class="reveal" onclick="showAnswer('ans5')">Answer check karo</button>
-<div class="answer" id="ans5">360° − (80° + 90° + 100°) = 90°.</div>
-</div>
+<h2>11. Interactive practice — MCQ Quiz</h2>
+<p>Har question mein ek option chuno, phir Check Answer dabao.</p>
+<div class="practice geometry-quiz" data-answer="0" data-why="Straight line ke angles ka sum 180° hota hai."><h3>Question 1</h3><p>Straight line par ek angle 48° hai. Doosra angle?</p>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q1" value="0"> 132°</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q1" value="1"> 48°</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q1" value="2"> 42°</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q1" value="3"> 180°</label>
+<button type="button" class="check-answer">Check Answer</button><div class="feedback" aria-live="polite"></div></div>
+<div class="practice geometry-quiz" data-answer="1" data-why="Vertically opposite angles equal hote hain."><h3>Question 2</h3><p>Ek angle 83° hai. Uska vertically opposite angle?</p>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q2" value="0"> 97°</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q2" value="1"> 83°</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q2" value="2"> 180°</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q2" value="3"> 7°</label>
+<button type="button" class="check-answer">Check Answer</button><div class="feedback" aria-live="polite"></div></div>
+<div class="practice geometry-quiz" data-answer="2" data-why="Triangle ke angles ka sum 180° hota hai."><h3>Question 3</h3><p>Triangle ke angles 40° aur 75° hain. Third angle?</p>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q3" value="0"> 55°</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q3" value="1"> 75°</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q3" value="2"> 65°</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q3" value="3"> 105°</label>
+<button type="button" class="check-answer">Check Answer</button><div class="feedback" aria-live="polite"></div></div>
+<div class="practice geometry-quiz" data-answer="3" data-why="Diameter = 2 × radius = 10 cm."><h3>Question 4</h3><p>Radius 5 cm ho to diameter?</p>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q4" value="0"> 5 cm</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q4" value="1"> 15 cm</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q4" value="2"> 2.5 cm</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q4" value="3"> 10 cm</label>
+<button type="button" class="check-answer">Check Answer</button><div class="feedback" aria-live="polite"></div></div>
+<div class="practice geometry-quiz" data-answer="0" data-why="Quadrilateral ke angles ka sum 360° hota hai."><h3>Question 5</h3><p>Quadrilateral ke teen interior angles 80°, 90° aur 100° hain. Fourth angle?</p>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q5" value="0"> 90°</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q5" value="1"> 100°</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q5" value="2"> 80°</label>
+<label style="display:block;margin:8px 0;"><input type="radio" name="geometry-q5" value="3"> 180°</label>
+<button type="button" class="check-answer">Check Answer</button><div class="feedback" aria-live="polite"></div></div>
 </section>
 
 <section class="lesson">
@@ -311,6 +315,104 @@
 <p><strong>Circle circumference:</strong> 2πr</p>
 <a class="btn secondary" href="class9.html">All chapters</a>
 </section>
+
+<section class="gyanora-animation-lab" data-kind="geometry">
+  <p>INTERACTIVE LEARNING LAB</p>
+  <h2>Triangle Explorer</h2>
+  <p class="lab-intro">Change an angle and explore a triangle.</p>
+  <div class="lab-stage">
+    <svg viewBox="0 0 620 280" role="img" aria-label="Triangle Explorer interactive animation"></svg>
+  </div>
+  <div class="lab-controls">
+    <label class="lab-slider">Explore value
+      <input type="range" min="0" max="10" value="5" step="1">
+    </label>
+    <button type="button" data-play>▶ Play</button>
+    <button type="button" class="lab-reset" data-reset>↺ Reset</button>
+  </div>
+  <p class="lab-readout" aria-live="polite">Animation ready.</p>
+  <p class="lab-tip">Tip: slider badlo, Play dabao, aur Reset se shuru karo.</p>
+</section>
+
+<section class="lesson written-practice" id="written-practice">
+<p class="eyebrow">NOTEBOOK PRACTICE • 10 QUESTIONS</p>
+<h2>Written Practice: Geometry</h2>
+<p>Har question pehle notebook mein khud solve karo. Phir <strong>Show Full Solution</strong> kholkar apne steps compare karo.</p>
+<div class="written-progress"><span>Easy → Medium → Challenge</span><span>80 questions across 8 chapters</span></div>
+<article class="written-question" id="written-q1">
+<p class="written-level">Easy • Question 1</p>
+<h3>One angle on a straight line is 65°. Find the adjacent angle.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Angles on a straight line sum to 180°. The angle is 180°−65°.</p>
+<p class="final-answer"><strong>Final answer:</strong> 115°</p>
+</div></details></article>
+<article class="written-question" id="written-q2">
+<p class="written-level">Easy • Question 2</p>
+<h3>An angle is 72°. Find its vertically opposite angle.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Vertically opposite angles are equal.</p>
+<p class="final-answer"><strong>Final answer:</strong> 72°</p>
+</div></details></article>
+<article class="written-question" id="written-q3">
+<p class="written-level">Easy • Question 3</p>
+<h3>Two angles of a triangle are 50° and 60°. Find the third.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Triangle angle sum is 180°. Third angle = 180°−50°−60°.</p>
+<p class="final-answer"><strong>Final answer:</strong> 70°</p>
+</div></details></article>
+<article class="written-question" id="written-q4">
+<p class="written-level">Easy • Question 4</p>
+<h3>A circle has radius 8 cm. Find its diameter.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Diameter = 2 × radius = 2×8.</p>
+<p class="final-answer"><strong>Final answer:</strong> 16 cm</p>
+</div></details></article>
+<article class="written-question" id="written-q5">
+<p class="written-level">Medium • Question 5</p>
+<h3>A quadrilateral has angles 80°, 95° and 105°. Find the fourth.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Quadrilateral angle sum = 360°. Fourth = 360°−(80°+95°+105°).</p>
+<p class="final-answer"><strong>Final answer:</strong> 80°</p>
+</div></details></article>
+<article class="written-question" id="written-q6">
+<p class="written-level">Medium • Question 6</p>
+<h3>Parallel lines are cut by a transversal. One corresponding angle is 112°. Find the other.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Corresponding angles are equal when the lines are parallel.</p>
+<p class="final-answer"><strong>Final answer:</strong> 112°</p>
+</div></details></article>
+<article class="written-question" id="written-q7">
+<p class="written-level">Medium • Question 7</p>
+<h3>An isosceles triangle has vertex angle 40°. Find each base angle.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> The base angles share 180°−40°=140°. Each is 140°÷2.</p>
+<p class="final-answer"><strong>Final answer:</strong> 70° each</p>
+</div></details></article>
+<article class="written-question" id="written-q8">
+<p class="written-level">Medium • Question 8</p>
+<h3>A circle has diameter 14 cm. Find its circumference in terms of π.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Circumference C=πd. Substitute d=14 cm.</p>
+<p class="final-answer"><strong>Final answer:</strong> 14π cm</p>
+</div></details></article>
+<article class="written-question" id="written-q9">
+<p class="written-level">Challenge • Question 9</p>
+<h3>Two angles form a linear pair in ratio 2:7. Find both.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Let angles be 2x and 7x. Then 9x=180°, so x=20°.</p>
+<p class="final-answer"><strong>Final answer:</strong> 40° and 140°</p>
+</div></details></article>
+<article class="written-question" id="written-q10">
+<p class="written-level">Challenge • Question 10</p>
+<h3>A triangle has angles x, 2x and 3x. Find all angles.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> x+2x+3x=180°, so 6x=180° and x=30°.</p>
+<p class="final-answer"><strong>Final answer:</strong> 30°, 60°, 90°</p>
+</div></details></article>
+<p class="tip"><strong>Study rule:</strong> Solution dekhne se pehle apni working likho. Answer alag aaye to formula aur calculation dobara check karo.</p>
+<a class="btn secondary" href="class9.html">All chapters</a>
+</section>
+
 
 <div class="chapter-nav">
 <span><a href="algebraic-identities.html">← Previous chapter</a></span>
@@ -326,11 +428,39 @@
 </div></footer>
 
 <script src="app.js"></script>
+
+<script>
+document.querySelectorAll(".geometry-quiz .check-answer").forEach(function(button) {
+  button.addEventListener("click", function() {
+    const quiz = button.closest(".geometry-quiz");
+    const selected = quiz.querySelector('input[type="radio"]:checked');
+    const feedback = quiz.querySelector(".feedback");
+
+    feedback.classList.add("show");
+    feedback.classList.remove("correct", "wrong");
+
+    if (!selected) {
+      feedback.textContent = "Pehle ek option chuno.";
+      return;
+    }
+
+    if (selected.value === quiz.dataset.answer) {
+      feedback.classList.add("correct");
+      feedback.textContent = "Bilkul sahi! " + quiz.dataset.why;
+    } else {
+      feedback.classList.add("wrong");
+      feedback.textContent = "Jawab abhi sahi nahi hai. Dobara try karo.";
+    }
+  });
+});
+</script>
+
 <script>
 function showAnswer(id){
 const el=document.getElementById(id);
 if(el){el.style.display=el.style.display==="block"?"none":"block";}
 }
 </script>
+  <script src="gyanora-animations.js" defer></script>
 </body>
                                                                         </html>

@@ -22,6 +22,15 @@
 .answer{display:none;padding:10px;background:#dcfce7;border-radius:8px;margin-top:8px}
 .show-answer{margin-top:8px;cursor:pointer}
 </style>
+<!-- Google Analytics: GYANORA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F06TS6JVC5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-F06TS6JVC5');
+</script>
+
 </head>
 <body>
 <header>
@@ -255,7 +264,7 @@
 <label><input type="radio" name="q1" value="a"> 0.75</label>
 <label><input type="radio" name="q1" value="b"> 5/8</label>
 <label><input type="radio" name="q1" value="c"> √3</label>
-<button class="btn show-answer" type="button" onclick="reveal('a1')">Answer check karo</button>
+<button class="btn check-number-answer" type="button" data-question="q1">Check Answer</button>
 <div class="answer" id="a1">Correct: √3. Iska decimal non-terminating aur non-recurring hai.</div>
 </div>
 
@@ -264,7 +273,7 @@
 <label><input type="radio" name="q2" value="a"> 8</label>
 <label><input type="radio" name="q2" value="b"> 9</label>
 <label><input type="radio" name="q2" value="c"> 18</label>
-<button class="btn show-answer" type="button" onclick="reveal('a2')">Answer check karo</button>
+<button class="btn check-number-answer" type="button" data-question="q2">Check Answer</button>
 <div class="answer" id="a2">Correct: 9, kyunki 9 × 9 = 81.</div>
 </div>
 
@@ -273,7 +282,7 @@
 <label><input type="radio" name="q3" value="a"> √2</label>
 <label><input type="radio" name="q3" value="b"> π</label>
 <label><input type="radio" name="q3" value="c"> 0.333...</label>
-<button class="btn show-answer" type="button" onclick="reveal('a3')">Answer check karo</button>
+<button class="btn check-number-answer" type="button" data-question="q3">Check Answer</button>
 <div class="answer" id="a3">Correct: 0.333... kyunki yeh repeating decimal hai aur 1/3 ke barabar hai.</div>
 </div>
 
@@ -281,7 +290,7 @@
 <strong>Q4. −4 aur 2 mein number line par kaunsa left side par hoga?</strong>
 <label><input type="radio" name="q4" value="a"> −4</label>
 <label><input type="radio" name="q4" value="b"> 2</label>
-<button class="btn show-answer" type="button" onclick="reveal('a4')">Answer check karo</button>
+<button class="btn check-number-answer" type="button" data-question="q4">Check Answer</button>
 <div class="answer" id="a4">Correct: −4. Number line par chhota number left side hota hai.</div>
 </div>
 </section>
@@ -301,6 +310,104 @@
 <a class="btn secondary" href="class9.html">All chapters</a>
 </section>
 
+<section class="gyanora-animation-lab" data-kind="numberline">
+  <p>INTERACTIVE LEARNING LAB</p>
+  <h2>Explore the Number Line</h2>
+  <p class="lab-intro">Move between negative and positive numbers.</p>
+  <div class="lab-stage">
+    <svg viewBox="0 0 620 280" role="img" aria-label="Explore the Number Line interactive animation"></svg>
+  </div>
+  <div class="lab-controls">
+    <label class="lab-slider">Explore value
+      <input type="range" min="0" max="10" value="5" step="1">
+    </label>
+    <button type="button" data-play>▶ Play</button>
+    <button type="button" class="lab-reset" data-reset>↺ Reset</button>
+  </div>
+  <p class="lab-readout" aria-live="polite">Animation ready.</p>
+  <p class="lab-tip">Tip: slider badlo, Play dabao, aur Reset se shuru karo.</p>
+</section>
+
+<section class="lesson written-practice" id="written-practice">
+<p class="eyebrow">NOTEBOOK PRACTICE • 10 QUESTIONS</p>
+<h2>Written Practice: The World of Numbers</h2>
+<p>Har question pehle notebook mein khud solve karo. Phir <strong>Show Full Solution</strong> kholkar apne steps compare karo.</p>
+<div class="written-progress"><span>Easy → Medium → Challenge</span><span>80 questions across 8 chapters</span></div>
+<article class="written-question" id="written-q1">
+<p class="written-level">Easy • Question 1</p>
+<h3>Classify −7 as natural, whole, integer, rational or irrational.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> −7 is an integer and can be written as −7/1, so it is rational.</p>
+<p class="final-answer"><strong>Final answer:</strong> Integer and rational</p>
+</div></details></article>
+<article class="written-question" id="written-q2">
+<p class="written-level">Easy • Question 2</p>
+<h3>Write 0.75 as a fraction in simplest form.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> 0.75=75/100. Divide numerator and denominator by 25.</p>
+<p class="final-answer"><strong>Final answer:</strong> 3/4</p>
+</div></details></article>
+<article class="written-question" id="written-q3">
+<p class="written-level">Easy • Question 3</p>
+<h3>Is √49 rational or irrational?</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> √49=7, an integer; every integer is rational.</p>
+<p class="final-answer"><strong>Final answer:</strong> Rational</p>
+</div></details></article>
+<article class="written-question" id="written-q4">
+<p class="written-level">Easy • Question 4</p>
+<h3>Give an irrational number between 1 and 2.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Since 1² &lt; 2 &lt; 2², √2 lies between 1 and 2 and is irrational.</p>
+<p class="final-answer"><strong>Final answer:</strong> √2</p>
+</div></details></article>
+<article class="written-question" id="written-q5">
+<p class="written-level">Medium • Question 5</p>
+<h3>Arrange −3, 2, 0, −1 in ascending order.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Ascending means smallest to largest; negative numbers come before zero and positives.</p>
+<p class="final-answer"><strong>Final answer:</strong> −3, −1, 0, 2</p>
+</div></details></article>
+<article class="written-question" id="written-q6">
+<p class="written-level">Medium • Question 6</p>
+<h3>Convert 0.333... into a fraction.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Let x=0.333... Then 10x=3.333... Subtract: 9x=3, so x=3/9.</p>
+<p class="final-answer"><strong>Final answer:</strong> 1/3</p>
+</div></details></article>
+<article class="written-question" id="written-q7">
+<p class="written-level">Medium • Question 7</p>
+<h3>Is 0.1010010001... rational or irrational?</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> As written, the decimal does not terminate or repeat periodically. Such decimals are irrational.</p>
+<p class="final-answer"><strong>Final answer:</strong> Irrational, assuming the displayed non-repeating pattern continues</p>
+</div></details></article>
+<article class="written-question" id="written-q8">
+<p class="written-level">Medium • Question 8</p>
+<h3>Find √196.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> 14×14=196, so the principal square root is 14.</p>
+<p class="final-answer"><strong>Final answer:</strong> 14</p>
+</div></details></article>
+<article class="written-question" id="written-q9">
+<p class="written-level">Challenge • Question 9</p>
+<h3>Between which consecutive integers does √30 lie?</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> 5²=25 and 6²=36. Since 25&lt;30&lt;36, we have 5&lt;√30&lt;6.</p>
+<p class="final-answer"><strong>Final answer:</strong> Between 5 and 6</p>
+</div></details></article>
+<article class="written-question" id="written-q10">
+<p class="written-level">Challenge • Question 10</p>
+<h3>Simplify √72.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> 72=36×2, so √72=√36×√2.</p>
+<p class="final-answer"><strong>Final answer:</strong> 6√2</p>
+</div></details></article>
+<p class="tip"><strong>Study rule:</strong> Solution dekhne se pehle apni working likho. Answer alag aaye to formula aur calculation dobara check karo.</p>
+<a class="btn secondary" href="class9.html">All chapters</a>
+</section>
+
+
 <div class="chapter-nav">
 <span><a href="linear-polynomials.html">← Previous chapter</a></span>
 <span><a href="algebraic-identities.html">Next chapter →</a></span>
@@ -319,10 +426,55 @@
 
 <script src="app.js"></script>
 <script>
-function reveal(id){
-const box=document.getElementById(id);
-if(box){box.style.display=box.style.display==="block"?"none":"block";}
-}
+(function () {
+  const correctAnswers = {
+    q1: "c",
+    q2: "b",
+    q3: "c",
+    q4: "a"
+  };
+
+  document.querySelectorAll(".quiz-question .check-number-answer")
+    .forEach(function (button) {
+      button.addEventListener("click", function () {
+        const questionName = button.dataset.question;
+        const question = button.closest(".quiz-question");
+        if (!question) return;
+
+        const selected = question.querySelector(
+          'input[type="radio"]:checked'
+        );
+        const answerBox = question.querySelector(".answer");
+        if (!answerBox) return;
+
+        if (!answerBox.dataset.originalAnswer) {
+          answerBox.dataset.originalAnswer = answerBox.textContent.trim();
+        }
+
+        answerBox.style.display = "block";
+        answerBox.classList.add("show");
+
+        if (!selected) {
+          answerBox.textContent = "Pehle ek option chuno, phir Check Answer dabao.";
+          answerBox.classList.remove("correct", "wrong");
+          answerBox.classList.add("wrong");
+          return;
+        }
+
+        if (selected.value === correctAnswers[questionName]) {
+          answerBox.textContent = "Bilkul sahi! " + answerBox.dataset.originalAnswer;
+          answerBox.classList.remove("wrong");
+          answerBox.classList.add("correct");
+        } else {
+          answerBox.textContent =
+            "Abhi jawab sahi nahi hai. Dobara socho aur phir try karo.";
+          answerBox.classList.remove("correct");
+          answerBox.classList.add("wrong");
+        }
+      });
+    });
+})();
 </script>
+  <script src="gyanora-animations.js" defer></script>
 </body>
 </html>

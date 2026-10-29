@@ -18,6 +18,15 @@
 .reveal{padding:10px 14px;border:0;border-radius:9px;background:#2563eb;color:white;cursor:pointer;margin-top:10px}
 .note{padding:13px;border-left:4px solid #2563eb;background:#f1f6ff}
 </style>
+<!-- Google Analytics: GYANORA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F06TS6JVC5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-F06TS6JVC5');
+</script>
+
 </head>
 <body>
 <header><div class="container nav">
@@ -217,43 +226,102 @@ a² − 2ab + b² = (a − b)²
 </section>
 
 <section class="lesson">
-<h2>9. Interactive practice</h2>
-<p>Har question pehle khud solve karo, phir answer kholo.</p>
+<h2>9. Interactive MCQ Practice</h2>
+<p>Har question ke 4 options mein se ek chuno, phir Check Answer dabao.</p>
 
-<div class="practice">
+<style>
+.identity-quiz { padding:16px; margin:16px 0; border-radius:12px; background:#eff6ff; }
+.identity-quiz .option { display:block; padding:8px; margin:6px 0; cursor:pointer; }
+.identity-quiz .check-answer { margin-top:10px; padding:10px 16px; cursor:pointer; }
+.identity-quiz .feedback { margin-top:12px; font-weight:600; line-height:1.6; }
+.identity-quiz .feedback[data-result="correct"] { color:#15803d; }
+.identity-quiz .feedback[data-result="incorrect"] { color:#dc2626; }
+.identity-quiz .feedback[data-result="empty"] { color:#b45309; }
+</style>
+
+<div class="identity-quiz" data-answer="1" data-why="(a+b)² = a² + 2ab + b². Isliye (x+4)² = x² + 8x + 16.">
 <h3>Question 1</h3>
 <p>(x + 4)² kya hoga?</p>
-<button class="reveal" onclick="showAnswer('ans1')">Answer check karo</button>
-<div class="answer" id="ans1">x² + 8x + 16. Identity: (a+b)² = a² + 2ab + b².</div>
+<label class="option"><input type="radio" name="identity-q1" value="0"> x² + 4x + 16</label>
+<label class="option"><input type="radio" name="identity-q1" value="1"> x² + 8x + 16</label>
+<label class="option"><input type="radio" name="identity-q1" value="2"> x² + 16</label>
+<label class="option"><input type="radio" name="identity-q1" value="3"> x² + 8</label>
+<button class="check-answer" type="button">Check Answer</button>
+<div class="feedback" role="status" aria-live="polite"></div>
 </div>
 
-<div class="practice">
+<div class="identity-quiz" data-answer="2" data-why="(a−b)² = a² − 2ab + b². Isliye (x−3)² = x² − 6x + 9.">
 <h3>Question 2</h3>
 <p>(x − 3)² kya hoga?</p>
-<button class="reveal" onclick="showAnswer('ans2')">Answer check karo</button>
-<div class="answer" id="ans2">x² − 6x + 9. Middle term negative hai.</div>
+<label class="option"><input type="radio" name="identity-q2" value="0"> x² − 9</label>
+<label class="option"><input type="radio" name="identity-q2" value="1"> x² + 6x + 9</label>
+<label class="option"><input type="radio" name="identity-q2" value="2"> x² − 6x + 9</label>
+<label class="option"><input type="radio" name="identity-q2" value="3"> x² − 3x + 9</label>
+<button class="check-answer" type="button">Check Answer</button>
+<div class="feedback" role="status" aria-live="polite"></div>
 </div>
 
-<div class="practice">
+<div class="identity-quiz" data-answer="0" data-why="(a+b)(a−b) = a² − b². Isliye y² − 7² = y² − 49.">
 <h3>Question 3</h3>
 <p>(y + 7)(y − 7) simplify karo.</p>
-<button class="reveal" onclick="showAnswer('ans3')">Answer check karo</button>
-<div class="answer" id="ans3">y² − 49. Difference of two squares.</div>
+<label class="option"><input type="radio" name="identity-q3" value="0"> y² − 49</label>
+<label class="option"><input type="radio" name="identity-q3" value="1"> y² + 49</label>
+<label class="option"><input type="radio" name="identity-q3" value="2"> y² − 14y + 49</label>
+<label class="option"><input type="radio" name="identity-q3" value="3"> y² − 7</label>
+<button class="check-answer" type="button">Check Answer</button>
+<div class="feedback" role="status" aria-live="polite"></div>
 </div>
 
-<div class="practice">
+<div class="identity-quiz" data-answer="3" data-why="x² + 10x + 25 = x² + 2×x×5 + 5² = (x+5)².">
 <h3>Question 4</h3>
 <p>Factorise x² + 10x + 25.</p>
-<button class="reveal" onclick="showAnswer('ans4')">Answer check karo</button>
-<div class="answer" id="ans4">(x + 5)², kyunki 10x = 2 × x × 5 aur 25 = 5².</div>
+<label class="option"><input type="radio" name="identity-q4" value="0"> (x + 10)²</label>
+<label class="option"><input type="radio" name="identity-q4" value="1"> (x + 5)(x − 5)</label>
+<label class="option"><input type="radio" name="identity-q4" value="2"> x(x + 10) + 25</label>
+<label class="option"><input type="radio" name="identity-q4" value="3"> (x + 5)²</label>
+<button class="check-answer" type="button">Check Answer</button>
+<div class="feedback" role="status" aria-live="polite"></div>
 </div>
 
-<div class="practice">
+<div class="identity-quiz" data-answer="1" data-why="x×x = x², x×5 = 5x, 2×x = 2x aur 2×5 = 10. Isliye x² + 7x + 10.">
 <h3>Question 5</h3>
 <p>(x + 2)(x + 5) expand karo.</p>
-<button class="reveal" onclick="showAnswer('ans5')">Answer check karo</button>
-<div class="answer" id="ans5">x² + 7x + 10.</div>
+<label class="option"><input type="radio" name="identity-q5" value="0"> x² + 10</label>
+<label class="option"><input type="radio" name="identity-q5" value="1"> x² + 7x + 10</label>
+<label class="option"><input type="radio" name="identity-q5" value="2"> x² + 3x + 10</label>
+<label class="option"><input type="radio" name="identity-q5" value="3"> x² + 7x + 7</label>
+<button class="check-answer" type="button">Check Answer</button>
+<div class="feedback" role="status" aria-live="polite"></div>
 </div>
+
+<script>
+document.querySelectorAll(".identity-quiz .check-answer").forEach(function(button) {
+  button.addEventListener("click", function() {
+    const quiz = button.closest(".identity-quiz");
+    const selected = quiz.querySelector('input[type="radio"]:checked');
+    const feedback = quiz.querySelector(".feedback");
+
+    feedback.classList.add("show");
+    feedback.classList.remove("correct", "wrong");
+
+    if (!selected) {
+      feedback.dataset.result = "empty";
+      feedback.textContent = "Pehle ek option chuno.";
+      return;
+    }
+
+    if (selected.value === quiz.dataset.answer) {
+      feedback.dataset.result = "correct";
+      feedback.classList.add("correct");
+      feedback.textContent = "Bilkul sahi! " + quiz.dataset.why;
+    } else {
+      feedback.dataset.result = "incorrect";
+      feedback.classList.add("wrong");
+      feedback.textContent = "Abhi jawab sahi nahi hai. Dobara try karo.";
+    }
+  });
+});
+</script>
 </section>
 
 <section class="lesson">
@@ -265,6 +333,104 @@ a² − 2ab + b² = (a − b)²
 <p><strong>(a+b+c)²</strong> = a²+b²+c²+2ab+2bc+2ca</p>
 <a class="btn secondary" href="class9.html">All chapters</a>
 </section>
+
+<section class="gyanora-animation-lab" data-kind="identity">
+  <p>INTERACTIVE LEARNING LAB</p>
+  <h2>Algebraic Identities</h2>
+  <p class="lab-intro">Explore the square of a + b.</p>
+  <div class="lab-stage">
+    <svg viewBox="0 0 620 280" role="img" aria-label="Algebraic Identities interactive animation"></svg>
+  </div>
+  <div class="lab-controls">
+    <label class="lab-slider">Explore value
+      <input type="range" min="0" max="10" value="5" step="1">
+    </label>
+    <button type="button" data-play>▶ Play</button>
+    <button type="button" class="lab-reset" data-reset>↺ Reset</button>
+  </div>
+  <p class="lab-readout" aria-live="polite">Animation ready.</p>
+  <p class="lab-tip">Tip: slider badlo, Play dabao, aur Reset se shuru karo.</p>
+</section>
+
+<section class="lesson written-practice" id="written-practice">
+<p class="eyebrow">NOTEBOOK PRACTICE • 10 QUESTIONS</p>
+<h2>Written Practice: Algebraic Identities</h2>
+<p>Har question pehle notebook mein khud solve karo. Phir <strong>Show Full Solution</strong> kholkar apne steps compare karo.</p>
+<div class="written-progress"><span>Easy → Medium → Challenge</span><span>80 questions across 8 chapters</span></div>
+<article class="written-question" id="written-q1">
+<p class="written-level">Easy • Question 1</p>
+<h3>Expand (x + 3)².</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Use (a+b)²=a²+2ab+b²: x²+2(x)(3)+3².</p>
+<p class="final-answer"><strong>Final answer:</strong> x² + 6x + 9</p>
+</div></details></article>
+<article class="written-question" id="written-q2">
+<p class="written-level">Easy • Question 2</p>
+<h3>Expand (y − 4)².</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Use (a−b)²=a²−2ab+b².</p>
+<p class="final-answer"><strong>Final answer:</strong> y² − 8y + 16</p>
+</div></details></article>
+<article class="written-question" id="written-q3">
+<p class="written-level">Easy • Question 3</p>
+<h3>Simplify (m + 5)(m − 5).</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Use (a+b)(a−b)=a²−b².</p>
+<p class="final-answer"><strong>Final answer:</strong> m² − 25</p>
+</div></details></article>
+<article class="written-question" id="written-q4">
+<p class="written-level">Easy • Question 4</p>
+<h3>Expand (x + 2)(x + 7).</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Use (x+a)(x+b)=x²+(a+b)x+ab. Here a+b=9 and ab=14.</p>
+<p class="final-answer"><strong>Final answer:</strong> x² + 9x + 14</p>
+</div></details></article>
+<article class="written-question" id="written-q5">
+<p class="written-level">Medium • Question 5</p>
+<h3>Factorise x² + 12x + 36.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Compare with a²+2ab+b²: 36=6² and 12x=2·x·6.</p>
+<p class="final-answer"><strong>Final answer:</strong> (x + 6)²</p>
+</div></details></article>
+<article class="written-question" id="written-q6">
+<p class="written-level">Medium • Question 6</p>
+<h3>Expand (2a + 3)².</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Use u²+2uv+v² with u=2a and v=3.</p>
+<p class="final-answer"><strong>Final answer:</strong> 4a² + 12a + 9</p>
+</div></details></article>
+<article class="written-question" id="written-q7">
+<p class="written-level">Medium • Question 7</p>
+<h3>Simplify (p − 8)(p + 8).</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Use the difference of squares identity (a−b)(a+b)=a²−b².</p>
+<p class="final-answer"><strong>Final answer:</strong> p² − 64</p>
+</div></details></article>
+<article class="written-question" id="written-q8">
+<p class="written-level">Medium • Question 8</p>
+<h3>Factorise x² − 16.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Write x²−16 as x²−4², then use a²−b²=(a−b)(a+b).</p>
+<p class="final-answer"><strong>Final answer:</strong> (x − 4)(x + 4)</p>
+</div></details></article>
+<article class="written-question" id="written-q9">
+<p class="written-level">Challenge • Question 9</p>
+<h3>Expand (a + b + 2)².</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> Use (x+y+z)²=x²+y²+z²+2xy+2yz+2zx, with z=2.</p>
+<p class="final-answer"><strong>Final answer:</strong> a² + b² + 4 + 2ab + 4b + 4a</p>
+</div></details></article>
+<article class="written-question" id="written-q10">
+<p class="written-level">Challenge • Question 10</p>
+<h3>Evaluate 103² using an identity.</h3>
+<details class="solution-details"><summary>Show Full Solution</summary><div class="solution-body">
+<p><strong>Concept / method:</strong> 103=100+3. Then (100+3)²=10000+600+9.</p>
+<p class="final-answer"><strong>Final answer:</strong> 10609</p>
+</div></details></article>
+<p class="tip"><strong>Study rule:</strong> Solution dekhne se pehle apni working likho. Answer alag aaye to formula aur calculation dobara check karo.</p>
+<a class="btn secondary" href="class9.html">All chapters</a>
+</section>
+
 
 <div class="chapter-nav">
 <span><a href="numbers.html">← Previous chapter</a></span>
@@ -286,5 +452,6 @@ const el=document.getElementById(id);
 if(el){el.style.display=el.style.display==="block"?"none":"block";}
 }
 </script>
+  <script src="gyanora-animations.js" defer></script>
 </body>
           </html>
